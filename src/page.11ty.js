@@ -195,7 +195,7 @@ function yearPage(site, record) {
     <div class="year-heading">
       ${flag(site, item.region)}
       <div><h1>${region(locale, item.region)} <span class="heading-year">${yearText(locale, year)}</span></h1>
-      <p lang="${item.locale}" dir="auto">${escape(item.title)}</p></div>
+      <p>${text(locale, "holidays")} <span aria-hidden="true">·</span> ${language(locale, item.locale)}</p></div>
     </div>
     ${group.length > 1 ? `<nav class="edition-links" aria-label="${escape(ui[locale].language)}" data-aria="language">${calendarLinks}</nav>` : ""}
   </section>
