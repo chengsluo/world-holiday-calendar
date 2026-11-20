@@ -1,89 +1,91 @@
-# World Holiday Calendar · 全球节假日日历
+# World Holiday Calendar
 
-按国家、地区、语言和年份浏览、下载节假日。Eleventy 用 Node.js 将日历和下载接口一起生成静态文件。当前目录保留 52 个国家和地区、79 个日历版本，界面支持 46 个语言和文字版本，包括简体、繁体中文和从右到左的排版。
+**English** · [简体中文](README.zh-CN.md)
 
-正式站点为 [全球节假日日历](https://chengsluo.github.io/world-holiday-calendar/)。年份页面使用独立路径，例如 `/world-holiday-calendar/calendars/jp/ja/2010/`。
+Browse and download holidays by country, region, language, and year. Eleventy uses Node.js to build the site and its JSON downloads as static files. The calendar covers 52 countries and regions across 79 editions. The interface offers 46 language and script options, including Simplified and Traditional Chinese and right-to-left layouts.
 
-## 支持的语言
+Calendar years have their own pages, such as [Japan in 2010](https://chengsluo.github.io/world-holiday-calendar/calendars/jp/ja/2010/). [Visit World Holiday Calendar](https://chengsluo.github.io/world-holiday-calendar/).
 
-网站提供以下 46 个界面语言及文字版本。点击语言名称即可打开对应首页。
+## Supported languages
 
-| 语言 | 本地名称 | 语言代码 |
+Select any of the 46 interface languages and script options below to open its homepage.
+
+| Language | Native name | Language code |
 | --- | --- | --- |
-| [阿拉伯语](https://chengsluo.github.io/world-holiday-calendar/languages/ar/) | العربية | `ar` |
-| [保加利亚语](https://chengsluo.github.io/world-holiday-calendar/languages/bg/) | български | `bg` |
-| [孟加拉语](https://chengsluo.github.io/world-holiday-calendar/languages/bn/) | বাংলা | `bn` |
-| [加泰罗尼亚语](https://chengsluo.github.io/world-holiday-calendar/languages/ca/) | català | `ca` |
-| [捷克语](https://chengsluo.github.io/world-holiday-calendar/languages/cs/) | čeština | `cs` |
-| [丹麦语](https://chengsluo.github.io/world-holiday-calendar/languages/da/) | dansk | `da` |
-| [德语](https://chengsluo.github.io/world-holiday-calendar/languages/de/) | Deutsch | `de` |
-| [希腊语](https://chengsluo.github.io/world-holiday-calendar/languages/el/) | Ελληνικά | `el` |
-| [英语](https://chengsluo.github.io/world-holiday-calendar/languages/en/) | English | `en` |
-| [西班牙语](https://chengsluo.github.io/world-holiday-calendar/languages/es/) | español | `es` |
-| [芬兰语](https://chengsluo.github.io/world-holiday-calendar/languages/fi/) | suomi | `fi` |
-| [法语](https://chengsluo.github.io/world-holiday-calendar/languages/fr/) | français | `fr` |
-| [古吉拉特语](https://chengsluo.github.io/world-holiday-calendar/languages/gu/) | ગુજરાતી | `gu` |
-| [希伯来语](https://chengsluo.github.io/world-holiday-calendar/languages/he/) | עברית | `he` |
-| [印地语](https://chengsluo.github.io/world-holiday-calendar/languages/hi/) | हिन्दी | `hi` |
-| [克罗地亚语](https://chengsluo.github.io/world-holiday-calendar/languages/hr/) | hrvatski | `hr` |
-| [匈牙利语](https://chengsluo.github.io/world-holiday-calendar/languages/hu/) | magyar | `hu` |
-| [印度尼西亚语](https://chengsluo.github.io/world-holiday-calendar/languages/id/) | Indonesia | `id` |
-| [意大利语](https://chengsluo.github.io/world-holiday-calendar/languages/it/) | italiano | `it` |
-| [日语](https://chengsluo.github.io/world-holiday-calendar/languages/ja/) | 日本語 | `ja` |
-| [哈萨克语](https://chengsluo.github.io/world-holiday-calendar/languages/kk/) | қазақ тілі | `kk` |
-| [卡纳达语](https://chengsluo.github.io/world-holiday-calendar/languages/kn/) | ಕನ್ನಡ | `kn` |
-| [韩语](https://chengsluo.github.io/world-holiday-calendar/languages/ko/) | 한국어 | `ko` |
-| [马拉雅拉姆语](https://chengsluo.github.io/world-holiday-calendar/languages/ml/) | മലയാളം | `ml` |
-| [马拉地语](https://chengsluo.github.io/world-holiday-calendar/languages/mr/) | मराठी | `mr` |
-| [马来语](https://chengsluo.github.io/world-holiday-calendar/languages/ms/) | Melayu | `ms` |
-| [挪威语（博克马尔）](https://chengsluo.github.io/world-holiday-calendar/languages/nb/) | norsk bokmål | `nb` |
-| [荷兰语](https://chengsluo.github.io/world-holiday-calendar/languages/nl/) | Nederlands | `nl` |
-| [挪威语](https://chengsluo.github.io/world-holiday-calendar/languages/no/) | norsk | `no` |
-| [奥里亚语](https://chengsluo.github.io/world-holiday-calendar/languages/or/) | ଓଡ଼ିଆ | `or` |
-| [旁遮普语](https://chengsluo.github.io/world-holiday-calendar/languages/pa/) | ਪੰਜਾਬੀ | `pa` |
-| [波兰语](https://chengsluo.github.io/world-holiday-calendar/languages/pl/) | polski | `pl` |
-| [葡萄牙语](https://chengsluo.github.io/world-holiday-calendar/languages/pt/) | português | `pt` |
-| [罗马尼亚语](https://chengsluo.github.io/world-holiday-calendar/languages/ro/) | română | `ro` |
-| [俄语](https://chengsluo.github.io/world-holiday-calendar/languages/ru/) | русский | `ru` |
-| [斯洛伐克语](https://chengsluo.github.io/world-holiday-calendar/languages/sk/) | slovenčina | `sk` |
-| [瑞典语](https://chengsluo.github.io/world-holiday-calendar/languages/sv/) | svenska | `sv` |
-| [泰米尔语](https://chengsluo.github.io/world-holiday-calendar/languages/ta/) | தமிழ் | `ta` |
-| [泰卢固语](https://chengsluo.github.io/world-holiday-calendar/languages/te/) | తెలుగు | `te` |
-| [泰语](https://chengsluo.github.io/world-holiday-calendar/languages/th/) | ไทย | `th` |
-| [土耳其语](https://chengsluo.github.io/world-holiday-calendar/languages/tr/) | Türkçe | `tr` |
-| [乌克兰语](https://chengsluo.github.io/world-holiday-calendar/languages/uk/) | українська | `uk` |
-| [乌尔都语](https://chengsluo.github.io/world-holiday-calendar/languages/ur/) | اردو | `ur` |
-| [越南语](https://chengsluo.github.io/world-holiday-calendar/languages/vi/) | Tiếng Việt | `vi` |
-| [简体中文](https://chengsluo.github.io/world-holiday-calendar/) | 简体中文 | `zh-Hans` |
-| [繁體中文](https://chengsluo.github.io/world-holiday-calendar/languages/zh-hant/) | 繁體中文 | `zh-Hant` |
+| [Arabic](https://chengsluo.github.io/world-holiday-calendar/languages/ar/) | العربية | `ar` |
+| [Bulgarian](https://chengsluo.github.io/world-holiday-calendar/languages/bg/) | български | `bg` |
+| [Bangla](https://chengsluo.github.io/world-holiday-calendar/languages/bn/) | বাংলা | `bn` |
+| [Catalan](https://chengsluo.github.io/world-holiday-calendar/languages/ca/) | català | `ca` |
+| [Czech](https://chengsluo.github.io/world-holiday-calendar/languages/cs/) | čeština | `cs` |
+| [Danish](https://chengsluo.github.io/world-holiday-calendar/languages/da/) | dansk | `da` |
+| [German](https://chengsluo.github.io/world-holiday-calendar/languages/de/) | Deutsch | `de` |
+| [Greek](https://chengsluo.github.io/world-holiday-calendar/languages/el/) | Ελληνικά | `el` |
+| [English](https://chengsluo.github.io/world-holiday-calendar/languages/en/) | English | `en` |
+| [Spanish](https://chengsluo.github.io/world-holiday-calendar/languages/es/) | español | `es` |
+| [Finnish](https://chengsluo.github.io/world-holiday-calendar/languages/fi/) | suomi | `fi` |
+| [French](https://chengsluo.github.io/world-holiday-calendar/languages/fr/) | français | `fr` |
+| [Gujarati](https://chengsluo.github.io/world-holiday-calendar/languages/gu/) | ગુજરાતી | `gu` |
+| [Hebrew](https://chengsluo.github.io/world-holiday-calendar/languages/he/) | עברית | `he` |
+| [Hindi](https://chengsluo.github.io/world-holiday-calendar/languages/hi/) | हिन्दी | `hi` |
+| [Croatian](https://chengsluo.github.io/world-holiday-calendar/languages/hr/) | hrvatski | `hr` |
+| [Hungarian](https://chengsluo.github.io/world-holiday-calendar/languages/hu/) | magyar | `hu` |
+| [Indonesian](https://chengsluo.github.io/world-holiday-calendar/languages/id/) | Indonesia | `id` |
+| [Italian](https://chengsluo.github.io/world-holiday-calendar/languages/it/) | italiano | `it` |
+| [Japanese](https://chengsluo.github.io/world-holiday-calendar/languages/ja/) | 日本語 | `ja` |
+| [Kazakh](https://chengsluo.github.io/world-holiday-calendar/languages/kk/) | қазақ тілі | `kk` |
+| [Kannada](https://chengsluo.github.io/world-holiday-calendar/languages/kn/) | ಕನ್ನಡ | `kn` |
+| [Korean](https://chengsluo.github.io/world-holiday-calendar/languages/ko/) | 한국어 | `ko` |
+| [Malayalam](https://chengsluo.github.io/world-holiday-calendar/languages/ml/) | മലയാളം | `ml` |
+| [Marathi](https://chengsluo.github.io/world-holiday-calendar/languages/mr/) | मराठी | `mr` |
+| [Malay](https://chengsluo.github.io/world-holiday-calendar/languages/ms/) | Melayu | `ms` |
+| [Norwegian Bokmål](https://chengsluo.github.io/world-holiday-calendar/languages/nb/) | norsk bokmål | `nb` |
+| [Dutch](https://chengsluo.github.io/world-holiday-calendar/languages/nl/) | Nederlands | `nl` |
+| [Norwegian](https://chengsluo.github.io/world-holiday-calendar/languages/no/) | norsk | `no` |
+| [Odia](https://chengsluo.github.io/world-holiday-calendar/languages/or/) | ଓଡ଼ିଆ | `or` |
+| [Punjabi](https://chengsluo.github.io/world-holiday-calendar/languages/pa/) | ਪੰਜਾਬੀ | `pa` |
+| [Polish](https://chengsluo.github.io/world-holiday-calendar/languages/pl/) | polski | `pl` |
+| [Portuguese](https://chengsluo.github.io/world-holiday-calendar/languages/pt/) | português | `pt` |
+| [Romanian](https://chengsluo.github.io/world-holiday-calendar/languages/ro/) | română | `ro` |
+| [Russian](https://chengsluo.github.io/world-holiday-calendar/languages/ru/) | русский | `ru` |
+| [Slovak](https://chengsluo.github.io/world-holiday-calendar/languages/sk/) | slovenčina | `sk` |
+| [Swedish](https://chengsluo.github.io/world-holiday-calendar/languages/sv/) | svenska | `sv` |
+| [Tamil](https://chengsluo.github.io/world-holiday-calendar/languages/ta/) | தமிழ் | `ta` |
+| [Telugu](https://chengsluo.github.io/world-holiday-calendar/languages/te/) | తెలుగు | `te` |
+| [Thai](https://chengsluo.github.io/world-holiday-calendar/languages/th/) | ไทย | `th` |
+| [Turkish](https://chengsluo.github.io/world-holiday-calendar/languages/tr/) | Türkçe | `tr` |
+| [Ukrainian](https://chengsluo.github.io/world-holiday-calendar/languages/uk/) | українська | `uk` |
+| [Urdu](https://chengsluo.github.io/world-holiday-calendar/languages/ur/) | اردو | `ur` |
+| [Vietnamese](https://chengsluo.github.io/world-holiday-calendar/languages/vi/) | Tiếng Việt | `vi` |
+| [Simplified Chinese](https://chengsluo.github.io/world-holiday-calendar/) | 简体中文 | `zh-Hans` |
+| [Traditional Chinese](https://chengsluo.github.io/world-holiday-calendar/languages/zh-hant/) | 繁體中文 | `zh-Hant` |
 
-## 本地运行
+## Run locally
 
-使用 Node.js 22 或更高版本。构建使用已保存的快照，离线浏览页面时也能读取节日列表。
+Use Node.js 22 or later. The build uses saved calendar snapshots, so browsing the built pages locally does not require live holiday feeds.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-打开 <http://localhost:8080/world-holiday-calendar/>。独立构建和校验使用以下命令。
+Open <http://localhost:8080/world-holiday-calendar/>. To build and verify the site, run:
 
 ```sh
 npm run build
 npm run check
 ```
 
-`src/` 保存网页模板、样式和界面文案，`data/` 保存日历数据。Eleventy 输出到 `_site/`。Pages 工作流仅上传 `_site/`。
+`src/` contains page templates, styles, and interface text. `data/` holds the calendar data. Eleventy writes the static site to `_site/`, which the Pages workflow uploads.
 
-## 数据与更新
+## Data and updates
 
-- `data/editions.json` 保存订阅地址、地区和语言。
-- `data/history.json` 是按事件开始日期划分的固定快照，收录 2025 年及以前的现有记录。历史修订直接编辑对应地区、语言和年份，并在改动中说明来源。
-- `data/current.json` 保存 2026 年起的记录。`tools/refresh.py` 拉取已登记的 Apple iCloud 公开订阅，只刷新这一份文件。某个年份从滚动订阅窗口退出后，已保存的记录会保留。现有快照内的非 Apple 补录按原出处保留，Apple 重新覆盖相应年份时，以该订阅为准。
+- `data/editions.json` lists subscription URLs, regions, and languages.
+- `data/history.json` holds the fixed snapshot of events that start in 2025 or earlier. To correct a historical record, edit the affected edition and year and cite the source in the change.
+- `data/current.json` holds events from 2026 onward. `tools/refresh.py` refreshes this snapshot from the registered public Apple iCloud subscriptions. Years that fall outside the subscription window remain in the snapshot. Supplemental entries retain their original attribution until the Apple feed covers that year again.
 
-GitHub Actions 每周一自动同步，也支持从 **Actions → Refresh calendars and deploy Pages → Run workflow** 手动刷新。同步和构建都通过才会保存更新后的快照并部署。订阅下载或校验失败时，现有发布版本继续可用。推送到 `main` 时使用已提交的快照构建。若对 `main` 启用了屏蔽机器人推送的保护规则，需要通过正常审查流程提交快照。公开仓库连续 60 天无活动时，GitHub 可能停用定时任务。[GitHub Actions 调度说明](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
+GitHub Actions refreshes the data every Monday. To refresh it manually, open **Actions → Refresh calendars and deploy Pages → Run workflow**. The workflow saves the refreshed snapshot and deploys after synchronization, build, and validation succeed. If a feed download or validation fails, the existing deployment stays live. Pushes to `main` build from the committed snapshots. If branch protection blocks bot pushes, submit snapshot updates through the repository's review process. GitHub may disable scheduled workflows in public repositories after 60 days of inactivity. [GitHub Actions scheduling documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 
-本地手动刷新使用以下命令。
+To refresh locally, run:
 
 ```sh
 python3 -m venv .venv
@@ -93,36 +95,26 @@ npm run build
 npm run check
 ```
 
-## HTTPS JSON 下载
+## JSON downloads over HTTPS
 
-部署后，数据由 GitHub Pages 以静态 JSON 提供。每个语言文件按 ISO 国家及地区代码归档，包含该语言所有已收录的日历版本和年份。简体和繁体中文可单独下载，`zh.json` 同时收录两者。
+GitHub Pages serves static JSON. Each language file groups calendar editions by ISO country or region code and includes all available years for those editions. Separate Simplified and Traditional Chinese downloads are available, and `zh.json` includes both.
 
-| 用途 | 站点相对路径 |
+| Purpose | Site-relative path |
 | --- | --- |
-| 查询所有语言和下载地址 | `api/v1/index.json` |
-| 原始记录 | `api/v1/languages/{language}.json` |
-| 与网页合并模式一致的记录 | `api/v1/languages/{language}.merged.json` |
-| 中文示例 | `api/v1/languages/zh-hans.json` |
-| 日语合并版示例 | `api/v1/languages/ja.merged.json` |
+| List all languages and download URLs | `api/v1/index.json` |
+| Original records | `api/v1/languages/{language}.json` |
+| Records matching the site's merged view | `api/v1/languages/{language}.merged.json` |
+| Simplified Chinese example | `api/v1/languages/zh-hans.json` |
+| Merged Japanese example | `api/v1/languages/ja.merged.json` |
 
-返回对象包含 `schemaVersion`、`language`、`mode`、`historyThrough`、`appleFetchedOn`、`notices`、`regions`。例如 `regions.JP` 是该语言的日本日历版本数组。版本包含 `id`、`locale`、`title`、`subscription`、`sources` 和 `events`。
+The response includes `schemaVersion`, `language`, `mode`, `historyThrough`, `appleFetchedOn`, `notices`, and `regions`. For example, `regions.JP` is an array of Japanese calendar editions available in the requested language. Each edition includes `id`, `locale`, `title`, `subscription`, `sources`, and `events`.
 
-- `date` 是本地日历日期（`YYYY-MM-DD`）。多日事件的 `lastDate` 含当天，单日事件可省略该字段。
-- `source` 指向同版本的 `sources`，省略时用 `sources.current`。如有 `sourceUrl` 和 `sourceName`，可用它们作为更细的记录出处。
-- 原始版保留原名称、说明和 `workday` 标志。合并版去除括号备注，合并日期重叠的同名条目，排除标记为工作日的条目，并在 `originals` 保留原始记录。网页切换和合并下载使用同一份合并结果。
+- `date` is the local calendar date in `YYYY-MM-DD` format. The `lastDate` of a multi-day event is inclusive. Single-day events may omit it.
+- `source` identifies an entry in the edition's `sources` object and defaults to `sources.current`. Optional `sourceUrl` and `sourceName` fields provide attribution for individual records.
+- Original records preserve their names, descriptions, and `workday` flags. The merged view removes parenthetical notes, combines overlapping events with the same name, excludes entries marked as workdays, and preserves the source records in `originals`. The site and the merged downloads use the same result.
 
-## 许可和发布
+## License and deployment
 
-根目录的 [MIT 许可](LICENSE) 适用于项目贡献者有权授权的原创代码和文档。日历记录、原始 `.ics`、历史镜像、补录及其派生 JSON 按各自来源的条款处理。[数据出处与许可](data/SOURCES.md)
+The root [MIT license](LICENSE) applies to original code and documentation that project contributors have the right to license. Calendar records, original `.ics` files, archived mirrors, supplemental records, and derived JSON are subject to the terms of their respective sources. [Data sources and licensing (Simplified Chinese)](data/SOURCES.md)
 
-此仓库发布网站代码和构建所用的日历快照。原始归档由各来源提供。GitHub Pages 从 `main` 分支通过 GitHub Actions 发布。
-
-## Google 搜索
-
-网站输出每个国家、语言和年份的静态正文、canonical、对应语言的 hreflang，以及 `sitemap.xml`。
-
-1. 在 Google Search Console 添加 URL 前缀 `https://chengsluo.github.io/world-holiday-calendar/`。
-2. 选择 HTML 标签验证，将标签的 `content` 值存入仓库 Actions 变量 `GOOGLE_SITE_VERIFICATION`，再部署。构建会把标签写入首页。
-3. 验证后在「网址检查」请求收录首页，并提交站点路径下的 `sitemap.xml`。Google 自行决定是否及何时收录。
-
-[Google 验证说明](https://support.google.com/webmasters/answer/9008080) · [请求收录说明](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)
+This repository publishes the site code and the snapshots used to build it. The original archives are available from their respective sources. GitHub Actions deploys the `main` branch to GitHub Pages.
