@@ -118,3 +118,5 @@ The response includes `schemaVersion`, `language`, `mode`, `historyThrough`, `ap
 The root [MIT license](LICENSE) applies to original code and documentation that project contributors have the right to license. Calendar records, original `.ics` files, archived mirrors, supplemental records, and derived JSON are subject to the terms of their respective sources. [Data sources and licensing](data/SOURCES.md)
 
 This repository publishes the site code and the snapshots used to build it. The original archives are available from their respective sources. GitHub Actions deploys the `main` branch to GitHub Pages.
+
+**Contributing** — If you spot an error, please [open an issue](https://github.com/chengsluo/world-holiday-calendar/issues/new) or [submit a pull request](https://github.com/chengsluo/world-holiday-calendar/pulls).
