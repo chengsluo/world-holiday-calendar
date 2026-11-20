@@ -113,6 +113,15 @@ The response includes `schemaVersion`, `language`, `mode`, `historyThrough`, `ap
 - `source` identifies an entry in the edition's `sources` object and defaults to `sources.current`. Optional `sourceUrl` and `sourceName` fields provide attribution for individual records.
 - Original records preserve their names, descriptions, and `workday` flags. The merged view removes parenthetical notes, combines overlapping events with the same name, excludes entries marked as workdays, and preserves the source records in `originals`. The site and the merged downloads use the same result.
 
+## Deploy by Yourself
+
+The public JSON download endpoints come with no guarantees of continued availability or reliability. If you expect high request volumes or depend on a stable endpoint, fork this repository and serve the JSON from your own GitHub Pages site.
+
+1. Fork the repository and keep the name `world-holiday-calendar`.
+2. In [`src/site-data.mjs`](src/site-data.mjs), change `origin` to your Pages origin, such as `https://YOUR-ACCOUNT.github.io`. This updates canonical URLs and the sitemap for your deployment.
+3. In your fork, select **Settings → Pages → Source → GitHub Actions**, then enable workflows under **Actions**. Commit the origin change to `main` to publish the existing snapshot. To fetch updated data and redeploy manually, run **Refresh calendars and deploy Pages** from the Actions tab. [GitHub Pages setup](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) · [Actions in forks](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflows-in-forked-repositories)
+4. Point your application to `https://YOUR-ACCOUNT.github.io/world-holiday-calendar/api/v1/index.json` for the list of available downloads.
+
 ## License and deployment
 
 The root [MIT license](LICENSE) applies to original code and documentation that project contributors have the right to license. Calendar records, original `.ics` files, archived mirrors, supplemental records, and derived JSON are subject to the terms of their respective sources. [Data sources and licensing](data/SOURCES.md)

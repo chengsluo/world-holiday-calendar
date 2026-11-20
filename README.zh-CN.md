@@ -113,6 +113,15 @@ npm run check
 - `source` 指向同版本的 `sources`，省略时用 `sources.current`。如有 `sourceUrl` 和 `sourceName`，可用它们作为更细的记录出处。
 - 原始版保留原名称、说明和 `workday` 标志。合并版去除括号备注，合并日期重叠的同名条目，排除标记为工作日的条目，并在 `originals` 保留原始记录。网页切换和合并下载使用同一份合并结果。
 
+## 自行部署
+
+本站公开的 JSON 下载接口不提供持续可用性或可靠性保障。如果需要大量调用，或业务依赖稳定的接口，可 fork 本仓库，并在自己的 GitHub Pages 站点上提供 JSON 下载。
+
+1. Fork 本仓库，保留仓库名 `world-holiday-calendar`。
+2. 在 [`src/site-data.mjs`](src/site-data.mjs) 中将 `origin` 改为你的 Pages 域名，例如 `https://YOUR-ACCOUNT.github.io`。这会更新网页的 canonical URL 和站点地图。
+3. 在 fork 的 **Settings → Pages → Source** 中选择 **GitHub Actions**，并在 **Actions** 中启用工作流。将域名改动提交到 `main` 即可发布现有快照。如需手动拉取数据并重新部署，在 Actions 中运行 **Refresh calendars and deploy Pages**。[GitHub Pages 设置说明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) · [在 fork 中启用 Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflows-in-forked-repositories)
+4. 将应用指向 `https://YOUR-ACCOUNT.github.io/world-holiday-calendar/api/v1/index.json`，从该索引获取可用的下载地址。
+
 ## 许可和发布
 
 根目录的 [MIT 许可](LICENSE) 适用于项目贡献者有权授权的原创代码和文档。日历记录、原始 `.ics`、历史镜像、补录及其派生 JSON 按各自来源的条款处理。[数据出处与许可](data/SOURCES.zh-CN.md)
