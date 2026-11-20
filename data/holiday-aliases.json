@@ -1,0 +1,612 @@
+{
+  "at_de": {
+    "1. Advent": ["1. Advent (First Sunday of Advent)"],
+    "2. Advent": ["2. Advent (Second Sunday of Advent)"],
+    "3. Advent": ["3. Advent (Third Sunday of Advent)"],
+    "4. Advent": ["4. Advent (Fourth Sunday of Advent)"],
+    "Beginn der Sommerzeit": ["Sommerzeit Anfang"],
+    "Ende der Sommerzeit": ["Sommerzeit Ende"],
+    "Fronleichnam": ["Fronleichnam (Corpus Christi)"],
+    "Gründonnerstag": ["Gründonnerstag (Green Thursday)"],
+    "Heiliger Abend": ["Heiligabend"],
+    "Mariä Himmelfahrt": ["Maria Himmelfahrt (Assumption of Mary)"],
+    "Nikolo": ["Nikolaus (St. Nikolaus Day)", "Hl. Nikolaus"],
+    "Palmsonntag": ["Palmsonntag (Palm Sunday)"],
+    "St. Florian": ["Hl. Florian (OÖ)"],
+    "St. Josef": ["Hl. Josef  (K, ST, T, V)"],
+    "St. Leopold": ["Hl. Leopold (NÖ, W)"],
+    "St. Martin": ["Hl. Martin (B)"],
+    "St. Rupert": ["Hl. Rupert (S)"],
+    "Staatsfeiertag": ["Tag der Arbeit (Intl. Workers' Day)"]
+  },
+  "au_en": {
+    "Easter Saturday (ACT, NSW, NT, QLD)": ["Saturday before Easter Sunday"],
+    "King's Birthday (ACT, NSW, NT, SA, TAS, VIC)": ["Queen's Birthday (ACT, NSW, NT, SA, TAS, VIC)"],
+    "King's Birthday (QLD)": ["Queen's Birthday (QLD)"],
+    "King's Birthday (WA)": ["Queen's Birthday (WA)"]
+  },
+  "be_fr": {
+    "Fête de la Communauté flamande": ["Fête de la Communauté Flamande  (VAN, VOV, VBR, WHT, VLI, VWV)"],
+    "Fête de la Fédération Wallonie-Bruxelles": ["Fête de la Communauté Française  (BRU, WLG, WNA, WBR)"],
+    "Fête des Mères (Anvers)": ["Fête des Mères (ANV)"],
+    "Fête des Pères (Anvers)": ["Fête des Pères (ANV)"],
+    "Fête du Roi": ["Jour du Roi"],
+    "Heure d’hiver": ["L'heure d'été belge finit"],
+    "Heure d’été": ["L'heure d'été belge commence"],
+    "Nouvel an": ["Jour de l'An"],
+    "Noël": ["Jour de Noël"],
+    "Saint-Valentin": ["La Saint Valentin"]
+  },
+  "be_nl": {
+    "Begin wintertijd": ["Einde van de zomertijd in België"],
+    "Begin zomertijd": ["Begin van de zomertijd in België"],
+    "Dag van de Arbeid": ["Feest van de arbeid"],
+    "Feest van de Duitstalige Gemeenschap": ["Feestdag van de Duitstalige Gemeenschap"],
+    "Feest van de Federatie Wallonië-Brussel": ["Feest van de Franse Gemeenschap (BRU, WLG, WNA, WBR)"],
+    "Feest van de Vlaamse Gemeenschap": ["Feest van de Vlaamse Gemeenschap (VAN, VOV, VBR, WHT, VLI, VWV)"],
+    "Koningsfeest": ["Koningsdag"],
+    "Nieuwjaarsdag": ["Nieuwjaar"]
+  },
+  "bg_bg": {
+    "Ден на светите братя Кирил и Методий, на българската азбука, просвета и култура и на славянската книжовност": ["Ден на българската просвета и култура и на славянската писменост"]
+  },
+  "br_pt": {
+    "Ano Novo": ["Confraternização Universal (Ano Novo)"],
+    "Corpus Christi": ["Corpus Cristi"],
+    "Nossa Senhora Aparecida": ["Nossa Senhora da Aparecida"]
+  },
+  "ca_en": {
+    "British Columbia Day (BC)": ["British Columbia Day"],
+    "June Holiday (NL)": ["Discovery Day (NF, LR)"],
+    "National Indigenous Peoples Day": ["National Aboriginal Day"],
+    "New Brunswick Day (NB)": ["New Brunswick Day"],
+    "Nunavut Day (NU)": ["Nunavut Day"],
+    "Royal St. John's Regatta Day (NL)": ["Royal Saint John Regatta’s Day (NL)"],
+    "Saint Patrick’s Day": ["St Patrick's Day"],
+    "Saskatchewan Day (SK)": ["Saskatchewan Day"],
+    "Terry Fox Day (MB)": ["Terry Fox Day (MN)"]
+  },
+  "ca_fr": {
+    "Fête de juin (T.-N.-L.)": ["Jour de la Découverte (NF, LR)"],
+    "Fête de la Saint-Patrick": ["Saint-Patrick"],
+    "Fête des Insulaires (Î.-P.-É.)": ["Jour de la fondation (PE)"],
+    "Fête du Nunavut (NU)": ["Jour de Nunavut (NU)"],
+    "Jour du Souvenir": ["Jour des vétérans"],
+    "Journée Louis Riel (Man.)": ["Journée Louis Riel (MB)"],
+    "Journée nationale des peuples Autochtones": ["Journée nationale des Autochtones"],
+    "Saint-Jean-Baptiste (Qc)": ["Fête nationale du Québec (QC)"]
+  },
+  "ch_de": {
+    "1. Advent": ["Erster Advent"],
+    "2. Advent": ["Zweiter Advent"],
+    "3. Advent": ["Dritter Advent"],
+    "4. Advent": ["Vierter Advent"],
+    "Auffahrt": ["Christi Himmelfahrt"],
+    "Beginn der Sommerzeit": ["Anfang der Sommerzeit"],
+    "Bruderklausenfest (OW)": ["Niklaus von der Flüe (OW)"],
+    "Bundesfeier": ["Tag der Eidgenossenschaft"],
+    "Dreikönigstag": ["Heilige Drei Könige"],
+    "Faschingsdienstag": ["Fasnachtsdienstag"],
+    "Jahrestag der Ausrufung der Republik (NE)": ["Jahrestag Ausrufung Republik Neuenburg (NE)"],
+    "Mariä Empfängnis": ["Mariae Empfängnis"],
+    "Mariä Himmelfahrt": ["Maria Himmelfahrt"],
+    "Näfelser Fahrt (GL)": ["Fahrtsfest  (GL)"],
+    "St. Berchtold (AG)": ["Berchtoldstag (AG)"],
+    "St. Fridolin (SO)": ["Fridolinstag (SO)"],
+    "St. Josef": ["Feiertag des Heiligen Joseph"],
+    "St. Peter und Paul (TI)": [" St. Peter & Paul (TI)"],
+    "Weihnachtstag": ["Weihnachten"]
+  },
+  "ch_fr": {
+    "Deuxième dimanche de l’Avent": ["Deuxième Avent"],
+    "Fête Nationale": ["Fête Nationale Suisse"],
+    "Fête de Saint-Nicolas de Flüe (OW)": ["Saint Nicolas de Flüe (OW)"],
+    "Fête de l’Immaculée Conception": ["Immaculée Conception"],
+    "Heure d’hiver": ["Fin de l’heure d’été"],
+    "Heure d’été": ["Début de l'heure d'été"],
+    "Premier dimanche de l’Avent": ["Premier Avent"],
+    "Proclamation de la République (NE)": ["Indépendance du canton de Neuchâtel (NE)"],
+    "Quatrième dimanche de l’Avent": ["Quatrième Avent"],
+    "Saint-Berchtold (AG)": ["Saint Berthold (AG)"],
+    "Saint-Fridolin (SO)": ["Fête de Fridolin  (SO)"],
+    "Saint-Sylvestre (BL)": ["Réveillon (BL)"],
+    "Saints-Pierre et Paul (TI)": ["Saint Pierre & Saint Paul (TI)"],
+    "Troisième dimanche de l’Avent": ["Troisième Avent"],
+    "Épiphanie": ["Epiphanie"]
+  },
+  "ch_it": {
+    "Ascensione": ["Ascensione del Signore"],
+    "Assunzione": ["Assunzione di Maria"],
+    "Epifania": ["Epifania del Signore"],
+    "Festa nazionale": ["Festa nazionale svizzera"],
+    "Prima domenica dell'Avvento": ["Primo Avvento"],
+    "Proclamazione della Repubblica di Neuchâtel (NE)": ["Proclamazione della Repubblica de Neuchâtel (NE)"],
+    "Quarta domenica dell'Avvento": ["Quarto Avvento"],
+    "Restaurazione della Repubblica di Ginevra (GE)": ["Restaurazione della Repubblica Ginevra (GE)"],
+    "SS. Pietro e Paolo (TI)": ["San Pietro e Paolo (TI)"],
+    "San Benedetto (OW, LU)": ["San Bendetto (OW, LU)"],
+    "San Fridolino Abate (SO)": ["Festa di Fridolin  (SO)"],
+    "Seconda domenica dell'Avvento": ["Secondo Avvento"],
+    "Terza Domenica dell'Avvento": ["Terzo Avvento"]
+  },
+  "cn_zh": {
+    "儿童节": ["国际儿童节"],
+    "劳动节": ["国际劳动节"],
+    "妇女节": ["国际妇女节"],
+    "建党节": ["中国共产党诞辰", "建党节 香港回归纪念日"],
+    "清明": ["清明节"]
+  },
+  "cz_cs": {
+    "Velikonoční neděle": ["Boží hod velikonoční"]
+  },
+  "de_de": {
+    "1. Advent": ["1. Advent (First Sunday of Advent)"],
+    "2. Advent": ["2. Advent (Second Sunday of Advent)"],
+    "2. Weihnachtsfeiertag": ["2. Weihnachtstag (Second Day of Christmas)"],
+    "3. Advent": ["3. Advent (Third Sunday of Advent)"],
+    "4. Advent": ["4. Advent (Fourth Sunday of Advent)"],
+    "Buß- und Bettag": ["Buß- und Bettag (Day of Prayer and Repentance)"],
+    "Erster Mai": ["Tag der Arbeit", "Tag der Arbeit (Intl. Workers' Day)"],
+    "Faschingsdienstag": ["Fastnachtsdienstag"],
+    "Gründonnerstag": ["Gründonnerstag (Green Thursday)"],
+    "Heiligabend": ["Heiligabend (Christmas Eve)"],
+    "Nikolaus": ["Nikolaustag", "Nikolaus (St. Nikolaus Day)"],
+    "Rosenmontag": ["Rosenmontag (Carnival)"],
+    "Tag der Deutschen Einheit": ["Tag der Deutschen Einheit (German Reunification)"],
+    "Totensonntag": ["Totensonntag (Sunday for the Dead)"]
+  },
+  "dk_da": {
+    "Dronning Margrethe II": ["Dronningens fødselsdag"],
+    "Sommertid slutter": ["Sommertid slut"],
+    "Sommertid starter": ["Sommertid"]
+  },
+  "es_ca": {
+    "Cap d'Any": ["Any Nou"],
+    "Festa Nacional d’Espanya": ["Dia de la Hispanitat"],
+    "Festa del Treball": ["Dia Internacional dels Treballadors"],
+    "L'Assumpció": ["Dia de l'Assumpció"],
+    "Nadal": ["Dia de Nadal"]
+  },
+  "es_es": {
+    "Domingo de Pascua": ["Pascua"],
+    "Fiesta Nacional de España": ["Fiesta Nacional de España (National Holiday of Spain)"],
+    "Lunes de Pascua": ["Lunes de Pascua (Easter Monday)"],
+    "Navidad": ["Día de Navidad"]
+  },
+  "fi_fi": {
+    "Aleksis Kiven päivä": ["Aleksis Kiven päivä (The Day of Finnish Literature)"],
+    "Eino Leinon päivä": ["Eino Leinon päivä (Eino Leino's Day)"],
+    "J.L. Runebergin päivä": ["J.L. Runebergin päivä (J.L. Runeberg's Day)"],
+    "J.V. Snellmanin päivä": ["J.V. Snellmanin päivä (The Day of Finnishness)"],
+    "Kalevalan päivä": ["Kalevalan päivä (The Day of Finnish Culture)"],
+    "Mikael Agricolan päivä": ["Mikael Agricolan päivä (The Day of Finnish Language)"],
+    "Minna Canthin päivä": ["Minna Canthin päivä (The Day of Equality)"],
+    "YK:n päivä": ["YK:n päivä (United Nations Day)"],
+    "helluntai": ["Helluntai (Whitsunday)"],
+    "itsenäisyyspäivä": ["Itsenäisyyspäivä (Independece Day)"],
+    "kaatuneitten muistopäivä": ["Kaatuneiden muistopäivä", "Kaatuneiden muistopäivä (Memorial Day)"],
+    "kansallinen veteraanipäivä": ["Kansallinen veteraanipäivä (National War Veterans' Day)"],
+    "puolustusvoimain lippujuhlan päivä": ["Puolustusvoimain lippujuhlan päivä (The Flag Day of Finnish Defence Forces)"],
+    "ruotsalaisuuden päivä": ["Ruotsalaisuuden päivä (Finnish Swedish Heritage Day"],
+    "tapaninpäivä": ["Tapaninpäivä (2nd Day of Christmas)"],
+    "vapunpäivä": ["Vappu", "Vappu (Labour Day)"]
+  },
+  "fr_fr": {
+    "Ascension": ["Ascension (Ascension Day)"],
+    "Fête du Travail": ["Fête du travail (Labor Day)"],
+    "Heure d’hiver": ["Chang. heure d’hiver"],
+    "Heure d’été": ["Chang. heure d’été"],
+    "Victoire de 1945": ["Fête de la Victoire 1945"]
+  },
+  "gb_en": {
+    "2 January (Scotland)": ["2nd January (Scotland)"],
+    "Battle of the Boyne (N Ireland)": ["Battle of Boyne Day (N. Ireland)", "Battle of Boyne (Northern Ireland)"],
+    "British Summer Time begins": ["British Summer Time"],
+    "Burns Night (Scotland)": ["Robert Burn's night", "Burns Night"],
+    "Early May Bank Holiday": ["May Day"],
+    "Easter Sunday": ["Easter"],
+    "Guy Fawkes Night": ["Guy Fawkes Day"],
+    "Remembrance Day": ["Armistice Day"],
+    "St David’s Day": ["St. David's Day (Wales)"],
+    "St George’s Day": ["St. George's Day (England)"],
+    "Summer Bank Holiday (England, Wales, N Ireland)": ["Late Summer Holiday (excl. Scotland)"],
+    "Trooping the Colour": ["Trooping the Colours"]
+  },
+  "gr_el": {
+    "Δευτέρα του Πάσχα": ["Δευτέρα του Πασχα"],
+    "Δεύτερη Ημέρα των Χριστουγέννων/Σύναξη της Θεοτόκου": ["Σύναξη Θεοτόκου"],
+    "Επέτειος του Πολυτεχνείου": ["Πολυτεχνείο"],
+    "Ευαγγελισμός της Θεοτόκου/Έναρξη της Επανάστασης του 1821": ["25η Μαρτίου", "Ευαγγελισμός Θεοτόκου"],
+    "Κοίμηση της Θεοτόκου": ["Κοίμηση Θεοτόκου"],
+    "Κυριακή του Πάσχα": ["Άγιο Πάσχα"]
+  },
+  "hk_en": {
+    "Children's Day": ["Universal Children's Day"],
+    "Double Ninth Festival": ["Chung Yeung Festival"],
+    "Dragon Boat Festival": ["Tuen Ng Festival"],
+    "Easter Saturday": ["The day following Good Friday"],
+    "Mid-Autumn Festival": ["Chinese Mid-Autumn Festival"],
+    "The Day Following Mid-Autumn Festival": ["The day following the Chinese Mid-Autumn Festival (observed)"]
+  },
+  "hk_zh": {
+    "元旦": ["一月一日"],
+    "耶穌受難節": ["耶穌受難日"],
+    "青年節": ["國際青年節"]
+  },
+  "hr_hr": {
+    "Bogojavljenje ili Sveta tri kralja": ["Sveta tri kralja"],
+    "Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja": ["Dan domovinske zahvalnosti"],
+    "Očev dan": ["Dan očeva"],
+    "Svi sveti": ["Dan svih svetih"]
+  },
+  "hu_hu": {
+    "Az 1848-as forradalom és szabadságharc ünnepe": ["Nemzeti ünnep"],
+    "Az államalapítás ünnepe": ["Szent István napja, az államalapítás ünnepe"],
+    "Húsvét": ["Húsvétvasárnap"],
+    "Mindenszentek": ["Mindenszentek napja"]
+  },
+  "id_id": {
+    "Cuti Bersama Hari Raya Idul Adha": ["Cuti Bersama Idul Adha (Feast of the Sacrifice's Joint Holidays)"],
+    "Cuti Bersama Hari Raya Idul Fitri": ["Cuti Bersama Idul Fitri (End of Ramadan's Joint Holiday)", "Cuti Bersama Idul Fitri (End of Ramadan Joint Holidays)"],
+    "Cuti Bersama Hari Raya Natal": ["Cuti Bersama Natal (Christmas Joint Holiday)", "Cuti Bersama Natal (Christmas Joint Holidays)"],
+    "Cuti Bersama Hari Waisak": ["Cuti Bersama Waisak (Vesak's Joint Holidays)"],
+    "Cuti Bersama Tahun Baru Imlek": ["Cuti Bersama Imlek (Chinese New Year joint holiday)"],
+    "Hari Kemerdekaan": ["Hari Kemerdekaan RI (Independence Day)"],
+    "Hari Paskah": ["Paskah"],
+    "Hari Raya Idul Adha": ["Idul Adha (Feast of the Sacrifice)"],
+    "Hari Raya Idul Fitri": ["Idul Fitri 1 Syawal (End of Ramadan)"],
+    "Hari Raya Natal": ["Hari Natal", "Hari Raya Natal (Christmas)"],
+    "Hari Raya Nyepi": ["Hari Raya Nyepi-Tahun Baru Saka (Day of Silence-Caka New Year)", "Hari Raya Nyepi - Tahun Baru Saka (Day of Silence - Caka New Year)", "Hari Raya Nyepi Tahun Baru Saka"],
+    "Hari Waisak": ["Hari Raya Waisak (Vesak Day)", "Hari Raya Waisak"],
+    "Isra' Mi'raj Nabi Muhammad SAW": ["Isra' Mi'raj Nabi Muhammad SAW (Ascension of the Prophet)"],
+    "Jumat Agung": ["Wafat Yesus Kristus / Jumat Agung (Good Friday)", "Wafat Isa Almasih"],
+    "Kenaikan Isa Almasih": ["Kenaikan Yesus Kristus (Ascension Day)"],
+    "Maulid Nabi Muhammad SAW": ["Maulid Nabi Muhammad SAW (Birth of the Prophet)"],
+    "Tahun Baru": ["Tahun Baru Masehi (New Year's Day)"],
+    "Tahun Baru Hijriyah": ["Tahun Baru Hijriah", "Tahun Baru Hijriyah (Islamic New Year)"],
+    "Tahun Baru Imlek": ["Tahun Baru Imlek (Chinese New Year)"]
+  },
+  "ie_en-ie": {
+    "Irish Summer Time Begins": ["Summer Time Begins"],
+    "Irish Summer Time Ends": ["Summer Time Ends"],
+    "May Day": ["Early May Bank Holiday"]
+  },
+  "il_he": {
+    "ט׳ באב": ["תשעה באב"],
+    "יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה": ["יום הזיכרון לחללי מערכות ישראל"],
+    "יום הכיפורים": ["יום כיפור"],
+    "מעבר לשעון חורף": ["שעון חורף"],
+    "מעבר לשעון קיץ": ["שעון קיץ"]
+  },
+  "in_bn": {
+    "গণেশ চতুর্থী": ["বিনায়ক চতুর্থী"]
+  },
+  "in_en": {
+    "Ganesh Chaturthi": ["Vinayak Chaturthi"]
+  },
+  "in_gu": {
+    "ગણેશ ચતુર્થી": ["વિનાયક ચતુર્થી"]
+  },
+  "in_hi": {
+    "गणेश चतुर्थी": ["विनायक चतुर्थी"]
+  },
+  "in_kn": {
+    "ಗಣೇಶ ಚತುರ್ಥಿ": ["ವಿನಾಯಕ ಚತುರ್ಥಿ"]
+  },
+  "in_ml": {
+    "വിനായക ചതുർഥി / ഗണേശ ചതുർഥി": ["ഗണേശ ചതുർത്ഥി"]
+  },
+  "in_or": {
+    "ଗଣେଶ ଚତୁର୍ଥୀ": ["ବିନାୟକ ଚତୁର୍ଥୀ"]
+  },
+  "in_pa": {
+    "ਗਣੇਸ਼ ਚਤੁਰਥੀ": ["ਵਿਨਾਇਕ ਚਤੁਰਥੀ"]
+  },
+  "in_ta": {
+    "விநாயகர் சதுர்த்தி": ["விநாயக சதுர்த்தி"]
+  },
+  "in_ur": {
+    "گنیش چترتھی": ["ونایک چترتھی"]
+  },
+  "it_it": {
+    "Epifania": ["Epifania del Signore"],
+    "Festa del lavoro": ["Festa del Lavoro (Labor Day)"],
+    "Festa della Repubblica": ["Festa della Repubblica (Bank Holiday)", "Festa della Repubblica Italiana"],
+    "Liberazione dal nazifascismo": ["Festa della Liberazione", "Festa della Liberazione (Bank Holiday)"],
+    "Lunedì di Pasqua": ["Lunedì dell’Angelo"],
+    "Natale di Gesù": ["Natale"],
+    "Ognissanti": ["Tutti i Santi (Feast of All Saints)"],
+    "Santo Stefano": ["S. Stefano"]
+  },
+  "jp_en": {
+    "Children's Day": ["Universal Children's Day"],
+    "National Day": ["National Holiday"],
+    "Sports Day": ["Health and Sports Day"]
+  },
+  "jp_ja": {
+    "スポーツの日": ["体育の日"]
+  },
+  "kr_ko": {
+    "노동절": ["근로자의 날"],
+    "대통령 선거일": ["18대 대통령 선거일", "19대 대통령 선거일", "20대 대통령 선거일", "제 22대 대통령 선거일"],
+    "부처님오신날": ["석가탄신일"],
+    "새해": ["신정"],
+    "설날 연휴": ["설 연휴"],
+    "크리스마스": ["성탄절"]
+  },
+  "lu_de-lu": {
+    "1. Weihnachtsfeiertag": ["1. Weihnachtstag"],
+    "2. Weihnachtsfeiertag": ["2. Weihnachtstag"],
+    "Mariä Himmelfahrt": ["Maria Himmelfahrt"],
+    "Ostern": ["Ostersonntag"]
+  },
+  "lu_fr-lu": {
+    "Fête de la Saint-Étienne": ["Saint Etienne"],
+    "Fête nationale du Luxembourg": ["Fête Nationale"],
+    "Jour de Noël": ["Noël"],
+    "Jour de l'Ascension": ["Ascension"],
+    "Jour de l’an": ["Nouvel An"],
+    "Journée internationale des travailleurs": ["Fête du Travail"],
+    "L'Assomption de Marie": ["Assomption"]
+  },
+  "mx_en": {
+    "Anniversary of the Battle of Puebla": ["Cinco de Mayo"],
+    "Day of the Dead": ["Defuncts' Day (All Souls Day)"],
+    "Day of the Multicultural Nation": ["Columbus Day"],
+    "Feast of Our Lady of Guadalupe": ["Day of the Virgin of Guadalupe"],
+    "Holy Innocents' Day": ["Fools Day"],
+    "Holy Thursday": ["Maundy Thursday"],
+    "Labour Day": ["Labor Day"],
+    "Three Kings’ Day": ["Epiphany"]
+  },
+  "mx_es": {
+    "Domingo de Pascua": ["Pascua"],
+    "Día de la Batalla de Puebla": ["Batalla de Puebla"],
+    "Día de la Nación Pluricultural (Día de la Raza)": ["Día de la Raza"],
+    "Día de las Madres": ["Día de la Madre"],
+    "Día de los Santos Inocentes": ["Día de los Inocentes"],
+    "Fin de Año": ["Nochevieja"],
+    "Navidad": ["Día de Navidad"]
+  },
+  "my_en": {
+    "Birthday of His Majesty, Raja Perlis": ["Ulang Tahun Keputeraan Raja Perlis (The Raja Perlis's Birthday)"],
+    "Birthday of His Majesty, Sultan of Johor": ["Ulang Tahun Keputeraan Sultan Johor (Sultan Of Johor's Birthday)"],
+    "Birthday of His Majesty, Sultan of Kedah": ["Ulang Tahun Keputeraan Sultan Kedah (Sultan Of Kedah's Birthday)"],
+    "Birthday of His Majesty, Sultan of Kelantan": ["Ulang Tahun Keputeraan Sultan Kelantan (Sultan Of Kelantan's Birthday)"],
+    "Birthday of His Majesty, Sultan of Pahang": ["Hari Keputeraan Sultan Pahang (Sultan of Pahang's Birthday)"],
+    "Birthday of His Majesty, Sultan of Perak": ["Ulang Tahun Keputeraan Sultan Perak (Sultan Of Perak's Birthday)"],
+    "Birthday of His Majesty, Sultan of Selangor": ["Hari Keputeraan Sultan Selangor (Sultan of Selangors Birthday)"],
+    "Birthday of His Majesty, Sultan of Terengganu": ["Hari Keputeraan Sultan Terengganu (Sultan Of Terengganu's Birthday)"],
+    "Birthday of His Majesty, Yang Di-Pertuan Agong": ["Birthday of His Majesty, the Yang Di-Pertuan Agong", "Hari Keputeraan Seri Paduka Baginda Yang Di Pertuan Agong (King's Birthday)"],
+    "Birthday of His Majesty, Yang Di-Pertuan Besar Negeri Sembilan": ["Hari Keputeraan Yang Di-Pertuan Besar Negeri Sembilan (Yang Di-Pertuan Besar Of Negeri Sembilan's Birthday)"],
+    "Chinese New Year": ["Tahun Baru Cina (Chinese New Year)"],
+    "Christmas Day": ["Hari Krismas (Christmas)"],
+    "Deepavali": ["Deepavali (The Hindu Festival of Lights)"],
+    "Gawai Dayak Festival": ["Perayaan Hari Gawai Dayak (Gawai Dayak Festival)"],
+    "Hari Raya Haji": ["Hari Raya Qurban", "Hari Raya Haji (Hajj Celebration)"],
+    "Hari Raya Puasa": ["Hari Raya Aidilfitri (Eid ul-Fitr)", "End of Ramadan"],
+    "Hari Raya Puasa (observed)": ["End of Ramadan (Observed)"],
+    "Islamic New Year (Awal Muharam)": ["Islamic New Year", "Awal Muharam (Maal Hijrah)"],
+    "Kaamatan Harvest Festival": ["Pesta Kaamatan (Kaamatan Harvest Festival)"],
+    "Labour Day": ["Hari Pekerja (Labor Day)"],
+    "Malaysia Day": ["Hari Malaysia (Formation of Malaysia Day)"],
+    "National Day": ["Hari Kebangsaan (Independence Day)"],
+    "New Year’s Day": ["Tahun Baru (New Year)"],
+    "Prophet Muhammad’s Birthday (Maulidur Rasul)": ["Prophet's Birthday", "Hari Keputeraan Nabi Muhammad S.A.W (Maulidur Rasul) (Prophet Muhammad's Birthday)"],
+    "Ramadan": ["Awal Ramadan (The Start of Ramadan)"],
+    "Wesak Day": ["Hari Wesak (Wesak Day)"]
+  },
+  "my_ms": {
+    "Awal Muharam (Maal Hijrah)": ["Awal Muharram"],
+    "Awal Ramadan": ["Awal Ramadan (The Start of Ramadan)"],
+    "Hari Deepavali": ["Deepavali (The Hindu Festival of Lights)"],
+    "Hari Kebangsaan": ["Hari Kebangsaan (Independence Day)"],
+    "Hari Keputeraan Nabi Muhammad S.A.W. (Maulidur Rasul)": ["Hari Keputeraan Nabi Muhammad SAW", "Hari Keputeraan Nabi Muhammad S.A.W (Maulidur Rasul) (Prophet Muhammad's Birthday)"],
+    "Hari Keputeraan Seri Paduka Baginda Yang di-Pertuan Agong": ["Hari Keputeraan Yang di-Pertuan Agong", "Hari Keputeraan Seri Paduka Baginda Yang Di Pertuan Agong (King's Birthday)"],
+    "Hari Keputeraan Sultan Johor": ["Ulang Tahun Keputeraan Sultan Johor (Sultan Of Johor's Birthday)"],
+    "Hari Keputeraan Sultan Kedah": ["Ulang Tahun Keputeraan Sultan Kedah (Sultan Of Kedah's Birthday)"],
+    "Hari Keputeraan Sultan Kelantan": ["Ulang Tahun Keputeraan Sultan Kelantan (Sultan Of Kelantan's Birthday)"],
+    "Hari Keputeraan Sultan Pahang": ["Hari Keputeraan Sultan Pahang (Sultan of Pahang's Birthday)"],
+    "Hari Keputeraan Sultan Perak": ["Ulang Tahun Keputeraan Sultan Perak (Sultan Of Perak's Birthday)"],
+    "Hari Keputeraan Sultan Selangor": ["Hari Keputeraan Sultan Selangor (Sultan of Selangors Birthday)"],
+    "Hari Keputeraan Sultan Terengganu": ["Hari Keputeraan Sultan Terengganu (Sultan Of Terengganu's Birthday)"],
+    "Hari Keputeraan Yang di-Pertuan Besar Negeri Sembilan": ["Hari Keputeraan Yang Di-Pertuan Besar Negeri Sembilan (Yang Di-Pertuan Besar Of Negeri Sembilan's Birthday)"],
+    "Hari Krismas": ["Hari Krismas (Christmas)"],
+    "Hari Malaysia": ["Hari Malaysia (Formation of Malaysia Day)"],
+    "Hari Pekerja": ["Hari Pekerja (Labor Day)"],
+    "Hari Raya Puasa": ["Hari Raya Aidilfitri (Eid ul-Fitr)"],
+    "Hari Raya Qurban": ["Hari Raya Haji (Hajj Celebration)"],
+    "Hari Ulang Tahun Keputeraan Raja Perlis": ["Ulang Tahun Keputeraan Raja Perlis (The Raja Perlis's Birthday)"],
+    "Hari Wesak": ["Hari Wesak (Wesak Day)"],
+    "Perayaan Hari Gawai Dayak": ["Perayaan Hari Gawai Dayak (Gawai Dayak Festival)"],
+    "Pesta Kaamatan (Pesta Menuai)": ["Pesta Kaamatan (Kaamatan Harvest Festival)"],
+    "Tahun Baharu": ["Tahun Baru", "Tahun Baru (New Year)"],
+    "Tahun Baharu Cina": ["Tahun Baru Cina", "Tahun Baru Cina (Chinese New Year)"],
+    "Tahun Baharu Cina (Hari Kedua)": ["Tahun Baru Cina (Hari Kedua)"]
+  },
+  "my_zh": {
+    "开斋节（第二天）": ["开斋节翌日"],
+    "新年": ["新年元旦"],
+    "春节": ["农历新年"],
+    "最高元首诞辰": ["最高元首陛下诞辰"],
+    "正月初二": ["农历新年翌日"]
+  },
+  "nl_nl": {
+    "Eerste kerstdag": ["Kerstmis"],
+    "Eerste paasdag": ["1e Paasdag"],
+    "Eerste pinksterdag": ["1e Pinksterdag"],
+    "Goede Vrijdag": ["Goede Vrijdag (Good Friday)"],
+    "Tweede kerstdag": ["2e Kerstdag", "2e Kerstdag (2nd day of Christmas)"],
+    "Tweede paasdag": ["2e Paasdag"],
+    "Tweede pinksterdag": ["2e Pinksterdag"]
+  },
+  "nz_en": {
+    "Auckland Anniversary Day": ["Auckland Day"],
+    "Canterbury Anniversary Day": ["Canterbury Day"],
+    "Chatham Islands Anniversary Day": ["Chatham Islands Day"],
+    "Daylight Saving Time": ["Daylight Saving Time Begins"],
+    "Daylight Saving Time End": ["Daylight Saving Time Ends"],
+    "Hawkes’ Bay Anniversary Day": ["Hawkes' Bay Day"],
+    "King’s Birthday": ["Queen's Birthday"],
+    "Marlborough Anniversary Day": ["Marlborough Day"],
+    "Nelson Anniversary Day": ["Nelson Day"],
+    "Otago Anniversary Day": ["Otago Day "],
+    "South Canterbury Day": ["Canterbury Day (South)"],
+    "Southland Anniversary Day": ["Southland Day"],
+    "Taranaki Anniversary Day": ["Taranaki Day"],
+    "Wellington Anniversary Day": ["Wellington Day"],
+    "Westland Anniversary Day": ["Westland Day"]
+  },
+  "ph_en": {
+    "Christmas Day": ["Christmas"],
+    "Day of Valor": ["Araw Ng Kagitingan (Day of Valor)"],
+    "Last Day of the Year": ["New Year's Eve"],
+    "National and Local Elections": ["Elections special (non-working) day"]
+  },
+  "pl_pl": {
+    "Drugi dzień Bożego Narodzenia": ["Drugi dzień Świąt Bożego Narodzenia"],
+    "Dzień Edukacji Narodowej": ["Dzień Nauczyciela"],
+    "Wszystkich Świętych": ["Dzień Wszystkich Świętych"],
+    "Święto Pracy": ["Międzynarodowe Święto Pracy"]
+  },
+  "pt_pt": {
+    "Assunção de Nossa Senhora": ["Dia da Assunção de Nossa Senhora", "Assunção de Nossa Senhora (Assumption Day)"],
+    "Corpo de Deus": ["Corpo de Cristo", "Corpo de Deus (Corpus Christi)"],
+    "Dia da Liberdade": ["Dia da Liberdade (Freedom Day)"],
+    "Dia de Portugal": ["Dia de Portugal, de Camões e das Comunidades Portuguesas", "Dia de Portugal (Portugal Day)"],
+    "Dia de Todos os Santos": ["Todos os Santos (All Saints)"],
+    "Implantação da República": ["Dia da Implantação da República Portuguesa"],
+    "Restauração da Independência": ["Dia da Restauração da Independência", "Restauração da Independência (Restoration of Independance)"]
+  },
+  "ro_ro": {
+    "A doua zi de Anul Nou": ["A doua zi a Anului Nou"],
+    "A doua zi de Paște": ["Lunea Paştelui"],
+    "Crăciunul": ["Sărbătoarea Nașterii Domnului"],
+    "Paștele": ["Învierea Domnului - Paștele"],
+    "Rusaliile": ["Rusaliile - Pogorârea Sf. Duh"],
+    "Sfântul Andrei": ["Sf. Andrei - Ocrotitorul României"],
+    "Ziua Drapelului Național": ["Ziua Drapelului"],
+    "Ziua Națională a României": ["Ziua Națională (Ziua Marii Uniri)"]
+  },
+  "ru_ru": {
+    "Международный день защиты детей": ["День защиты детей"],
+    "Первый день Масленицы": ["Масленица"]
+  },
+  "se_sv": {
+    "Alla hjärtans dag": ["Alla hjärtans dag (Valentine's)"],
+    "Allhelgonadagen": ["Allhelgonadagen (Traditional All Saints)"],
+    "Annandag jul": ["Annandag jul (2nd Day of Christmas)"],
+    "Drottningens födelsedag": ["⚑Drottningens födelsedag (Queen's Birthday)"],
+    "Drottningens namnsdag": ["⚑Drottningens namnsdag (Queen's Nameday)"],
+    "Första maj": ["⚑Första maj (Walpurgis)"],
+    "Gustav Adolfsdagen": ["⚑Gustav Adolfsdagen (Gustav Adolf's Day)"],
+    "Kronprinsessans födelsedag": ["⚑Kronprinsessans födelsedag (Crownprincess' Birthday)"],
+    "Kungens namnsdag": ["⚑Konungens namnsdag (King's Nameday)"],
+    "Luciadagen": ["Lucia", "St. Lucia"],
+    "Midsommarafton": ["Midsommarafton (Midsummer's Eve)"],
+    "Midsommardagen": ["⚑Midsommardagen (Midsummer's Day)"],
+    "Nobeldagen": ["⚑Nobeldagen (Nobel's Day)"],
+    "Pingstafton": ["Pingstafton (Whitsun Eve)"],
+    "Pingstdagen": ["⚑Pingstdagen (Whitsunday)"],
+    "Sveriges nationaldag": ["Nationaldagen"],
+    "Tjugondag Knut": ["Tjugondedag Knut"]
+  },
+  "sg_en": {
+    "Second Day of the Chinese New Year": ["The day following Chinese New Year"]
+  },
+  "sg_ms": {
+    "Hari Pekerja": ["Hari Buruh"]
+  },
+  "sg_zh": {
+    "农历新年": ["春节"],
+    "开斋节": ["回教开斋节"],
+    "新年": ["元旦"],
+    "正月初二": ["春节翌日"]
+  },
+  "sk_sk": {
+    "Sviatok svätého Cyrila a Metoda": ["Sviatok sv. Cyrila a Metoda"],
+    "Veľká noc": ["Veľkonočná nedeľa"],
+    "Výročie Slovenského národného povstania": ["Výročie SNP"],
+    "Zjavenie Pána (Traja králi)": ["Zjavenie Pána"]
+  },
+  "th_th": {
+    "วันขึ้นปีใหม่": ["วันขึ้นปีใหม่ (New Year's Days)"],
+    "วันครู": ["วันครู (Teacher Day)"],
+    "วันฉัตรมงคล": ["วันฉัตรมงคล (Coronation Day)"],
+    "วันตรุษจีน": ["วันตรุษจีน (Chinese New Year's Day)"],
+    "วันนวมินทรมหาราช": ["วันคล้ายวันสวรรคตพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช บรมนาถบพิตร", "วันคล้ายวันสวรรคตพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร"],
+    "วันปิยมหาราช": ["วันปิยมหาราช (Chulalongkorn Memorial Day)"],
+    "วันพระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราช และวันที่ระลึกมหาจักรีบรมราชวงศ์": ["วันจักรี", "วันจักรี (Chakri Memorial Day)"],
+    "วันรัฐธรรมนูญ": ["วันรัฐธรรมนูญ (Constitution Day)"],
+    "วันวาเลนไทน์": ["วันแห่งความรัก (Valentine's Day)"],
+    "วันวิสาขบูชา": ["วันวิสาขบูชา (Visakha Bucha Day)"],
+    "วันสงกรานต์": ["เทศกาลวันสงกรานต์", "วันสงกรานต์ (Songkran Festival Day)"],
+    "วันสิ้นปี": ["วันสิ้นปี (New Year's Eve)"],
+    "วันหยุดพิเศษ": ["วันหยุดพิเศษ (เพิ่มเติม)"],
+    "วันอาสาฬหบูชา": ["วันอาสาฬหบูชา (Asarnha Bucha Day)"],
+    "วันเข้าพรรษา": ["วันเข้าพรรษา (Buddhist Lent Day)"],
+    "วันเด็ก": ["วันเด็กแห่งชาติ (Children Day)"],
+    "วันแรงงานแห่งชาติ": ["วันแรงงานแห่งชาติ (National Labour Day)"]
+  },
+  "tr_tr": {
+    "Emek ve Dayanışma Günü": ["İşçi Bayramı"]
+  },
+  "tw_en": {
+    "Armed Forces Day": ["軍人節 (Armed Forces Day)"],
+    "Chinese New Year’s Day": ["春節 (Chinese New Year)"],
+    "Chinese New Year’s Eve": ["除夕 (Chinese New Year's Eve)"],
+    "Constitution Day": ["行憲紀念日 (Constitution Day)"],
+    "Double Ninth Festival": ["九九重陽節 (Double Ninth Festival)"],
+    "Double Tenth Day": ["雙十節 (Double Tenth National Day", "National Day"],
+    "Dr. Sun Yat-sen’s Birthday": ["國父誕辰紀念日 (Dr. Sun Yat-sen's Birthday)"],
+    "Dragon Boat Festival": ["端午節 (Dragon Boat Festival)"],
+    "Father’s Day": ["父親節 (Father's Day)"],
+    "Founding Day": ["開國紀念日 (Founding Day)", "Founding of the Republic of China"],
+    "Ghost Festival": ["中元節 (Ghost Festival)"],
+    "International Women’s Day": ["婦女節 (Women's Day)", "Women’s Day"],
+    "International Youth Day": ["青年節 (Youth Day)", "Youth Day"],
+    "Labor Day": ["勞動節 (Labor Day)"],
+    "Lantern Festival": ["元宵節 (Lantern Festival)"],
+    "Mid-Autumn Festival": ["中秋節 (Mid-Autumn Festival)"],
+    "Mother’s Day": ["母親節 (Mother's Day)"],
+    "New Year’s Day": ["元旦 (New Year's Day)"],
+    "Peace Memorial Day": ["和平紀念日 (Peace Memorial Day)", "228 Memorial Day"],
+    "Qingming Festival": ["Tomb Sweeping Day", "清明節 (Tomb Sweeping Day)"],
+    "Taiwan Retrocession Day": ["台灣光復節 (Taiwan Retrocession Day)"],
+    "Teachers’ Day": ["教師節∕孔子誕辰紀念日 (Teacher's Day)"],
+    "Universal Children's Day": ["兒童節 (Children's Day)", "Children's Day"]
+  },
+  "tw_zh": {
+    "中華民國開國紀念日": ["開國紀念日 (Founding Day)", "開國紀念日 (元旦)"],
+    "和平紀念日": ["二二八和平紀念日"],
+    "教師節": ["教師節∕孔子誕辰紀念日 (Teacher's Day)"],
+    "清明節": ["清明節 (Tomb Sweeping Day)", "民族掃墓節"],
+    "農曆正月初一": ["春節 (Chinese New Year)", "大年初一"],
+    "農曆除夕": ["除夕 (Chinese New Year's Eve)", "除夕"],
+    "重陽節": ["九九重陽節 (Double Ninth Festival)"],
+    "雙十節": ["雙十節 (Double Tenth National Day", "國慶日"]
+  },
+  "ua_uk": {
+    "Великдень": ["Православна Пасха"],
+    "День Збройних сил України": ["День Збройних Сил"],
+    "День праці": ["День міжнародної солідарності трудящих"],
+    "День сміху": ["День дурня"],
+    "Трійця": ["Трійця (П’ятидесятниця)"]
+  },
+  "us_en": {
+    "Christmas Day": ["Christmas"],
+    "Daylight Saving Time": ["Daylight Saving Time Begins"],
+    "Daylight Saving Time End": ["Daylight Saving Time Ends"],
+    "First Night of Ramadan": ["Beginning of Ramadan"]
+  },
+  "us_es": {
+    "Día de las Elecciones": ["Election Day"]
+  },
+  "vn_vi": {
+    "Lễ Giáng Sinh": ["Giáng sinh"],
+    "Ngày Quốc khánh": ["Quốc khánh"],
+    "Ngày Quốc tế Thiếu nhi": ["Tết Thiếu Nhi"],
+    "Ngày Thống nhất đất nước": ["Ngày Giải phóng Miền Nam"],
+    "Ngày quốc tế Lao động": ["Quốc tế Lao động"]
+  }
+}

@@ -116,7 +116,7 @@ details[open] > summary > .icon-chevron { transform: rotate(180deg); }
 .directory-switch { margin-inline-start: auto; }
 #directory-count, .count { display: inline-grid; place-items: center; min-width: 1.8rem; min-height: 1.65rem; padding-inline: .44rem; background: var(--tint); color: var(--accent); border-radius: .4rem; font-size: .77rem; font-weight: 750; font-variant-numeric: tabular-nums; }
 .directory { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .85rem; }
-.directory-card, .month-card, .month-panel, .calendar-toolbar { border: 1px solid var(--line); background: var(--surface); border-radius: .92rem; box-shadow: var(--shadow); min-width: 0; }
+.directory-card, .month-card, .month-panel, .calendar-toolbar, .holiday-index { border: 1px solid var(--line); background: var(--surface); border-radius: .92rem; box-shadow: var(--shadow); min-width: 0; }
 .directory-card { position: relative; display: flex; flex-direction: column; align-items: start; padding: .95rem 1.1rem 1rem; }
 .directory-card:hover, .directory-card:focus-within { border-color: #a4b4e9; }
 .directory-card-single:focus-within { outline: 3px solid #4061e0; outline-offset: 2px; }
@@ -182,6 +182,14 @@ details[open] > summary > .icon-chevron { transform: rotate(180deg); }
 .month-nav button { flex: 1 0 auto; min-height: 2.45rem; padding: .35rem .56rem; }
 .month-nav button:hover, .month-arrows button:hover:enabled { color: var(--accent); background: var(--tint); }
 .month-nav button[aria-pressed="true"] { background: var(--accent); color: white; }
+
+.holiday-index { margin-block-end: 1rem; }
+.holiday-index summary { display: flex; align-items: center; gap: .65rem; min-height: 2.8rem; padding: .55rem .9rem; border-radius: .92rem; font-size: .9rem; font-weight: 650; }
+.holiday-index summary:hover { color: var(--accent); }
+.holiday-index .icon-chevron { flex: none; margin-inline-start: auto; color: var(--muted); }
+.holiday-index ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: .42rem 1.6rem; margin: 0; padding: .85rem 1.1rem .95rem; padding-inline-start: 2rem; border-top: 1px solid var(--line); font-size: .87rem; }
+.holiday-index li { overflow-wrap: anywhere; }
+.holiday-index li::marker { color: var(--accent); }
 
 #calendar-view { display: grid; gap: 1rem; }
 #calendar-view:has(.month-panel:not([hidden])) { grid-template-columns: minmax(0, 1.18fr) minmax(0, 1fr); align-items: start; }

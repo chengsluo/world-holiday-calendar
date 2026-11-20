@@ -114,7 +114,8 @@ The response includes `schemaVersion`, `language`, `mode`, `historyThrough`, `ap
 
 - `date` is the local calendar date in `YYYY-MM-DD` format. The `lastDate` of a multi-day event is inclusive. Single-day events may omit it.
 - `source` identifies an entry in the edition's `sources` object and defaults to `sources.current`. Optional `sourceUrl` and `sourceName` fields provide attribution for individual records.
-- Original records preserve their names, descriptions, and `workday` flags. The merged view removes parenthetical notes, combines overlapping events with the same name, excludes entries marked as workdays, and preserves the source records in `originals`. The site and the merged downloads use the same result.
+- The site and both JSON modes use 2026 titles for confirmed name variants within each edition, with 2025 titles as the fallback. Confirmed aliases are recorded in `data/holiday-aliases.json`. After standardization, a holiday must appear in at least three distinct years in that edition. Substitute days count with their associated holiday, and workday entries remain available. The source snapshots retain the upstream titles.
+- Original mode lists individual calendar entries with their descriptions and `workday` flags. Merged mode removes parenthetical notes, combines overlapping events with the same name, omits workdays, and includes the individual entries in `originals`.
 
 ## Deploy by Yourself
 

@@ -216,6 +216,14 @@ function yearPage(site, record) {
       ${Array.from({ length: 12 }, (_, index) => `<button type="button" data-show-month="${index + 1}" aria-pressed="false" aria-controls="calendar-view">${month(locale, index + 1)}</button>`).join("")}
     </nav>
   </div>
+  <details class="holiday-index">
+    <summary>
+      ${text(locale, "mergedHolidayIndex")}
+      <span class="count">${numberText(locale, item.mergedTitles.length)}</span>
+      ${icon("chevron")}
+    </summary>
+    <ul>${item.mergedTitles.map((title) => `<li><bdi lang="${item.locale}">${escape(title)}</bdi></li>`).join("")}</ul>
+  </details>
   <div id="calendar-view">
     <section class="month-panel" id="month-panel" hidden aria-labelledby="month-heading">
       <div class="month-panel-head">

@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { ui, regionName, languageName } from "./locale-data.mjs";
 import { mergeHolidays, overlapsYear } from "./holidays.mjs";
+import { curateEdition } from "./calendar-edition.mjs";
 
 const origin = "https://chengsluo.github.io";
 const base = "/world-holiday-calendar/";
@@ -11,13 +12,16 @@ export const homePath = (locale) => locale === defaultLocale ? "" : `languages/$
 export const apiPath = (language, mode) => `api/v1/languages/${language.toLowerCase()}${mode === "merged" ? ".merged" : ""}.json`;
 
 export default async function () {
-  const [editions, history, current] = await Promise.all(["editions", "history", "current"].map(read));
+  const [editions, history, current, aliases] = await Promise.all(
+    ["editions", "history", "current", "holiday-aliases"].map(read),
+  );
   const yearNow = new Date().getUTCFullYear();
   const calendars = editions.map((edition) => {
     if (!ui[edition.locale]) throw new Error(`Missing interface language ${edition.locale}`);
     const archive = history.editions[edition.id];
     const live = current.editions[edition.id];
-    const events = [...Object.values(archive?.years ?? {}), ...Object.values(live?.years ?? {})].flat();
+    const sourceEvents = [...Object.values(archive?.years ?? {}), ...Object.values(live?.years ?? {})].flat();
+    const events = curateEdition(sourceEvents, edition.id, aliases[edition.id] ?? {});
     if (!events.length) throw new Error(`Empty edition ${edition.id}`);
     const years = [...new Set(events.flatMap(({date, lastDate = date}) => {
       const first = Number(date.slice(0, 4));
@@ -25,7 +29,10 @@ export default async function () {
     }))].sort((a, b) => b - a);
     const preferredYear = years.find((year) => year <= yearNow) ?? years.at(-1);
     const sources = { current: { kind: "current", title: "Apple iCloud", url: edition.url }, ...archive?.sources, ...live?.sources };
-    return { ...edition, events, years, preferredYear, sources, merged: mergeHolidays(events) };
+    const merged = mergeHolidays(events);
+    const collator = new Intl.Collator(edition.locale);
+    const mergedTitles = [...new Set(merged.map(({ title }) => title))].sort(collator.compare);
+    return { ...edition, events, years, preferredYear, sources, merged, mergedTitles };
   });
 
   const locales = [...new Set(editions.map(({ locale }) => locale))].sort();
