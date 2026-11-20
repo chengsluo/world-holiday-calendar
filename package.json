@@ -1,0 +1,20 @@
+{
+  "name": "world-holiday-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "eleventy --quiet",
+    "dev": "eleventy --serve",
+    "check": "node tools/check-build.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.8",
+    "flag-icons": "7.6.0",
+    "parse5": "7.3.0"
+  }
+}

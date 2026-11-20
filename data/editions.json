@@ -1,0 +1,741 @@
+[
+  {
+    "region": "AE",
+    "language": "ar",
+    "title": "أعياد الإمارات العربية المتحدة",
+    "id": "ae_ar",
+    "url": "https://calendars.icloud.com/holidays/ae_ar.ics/",
+    "aliases": [],
+    "locale": "ar"
+  },
+  {
+    "region": "AT",
+    "language": "de",
+    "title": "Österreichische Feiertage",
+    "id": "at_de",
+    "url": "https://calendars.icloud.com/holidays/at_de.ics/",
+    "aliases": [
+      "at_de-at"
+    ],
+    "locale": "de"
+  },
+  {
+    "region": "AU",
+    "language": "en",
+    "title": "Australian Holidays",
+    "id": "au_en",
+    "url": "https://calendars.icloud.com/holidays/au_en.ics/",
+    "aliases": [
+      "au_en-au"
+    ],
+    "locale": "en"
+  },
+  {
+    "region": "BE",
+    "language": "fr",
+    "title": "Jours fériés belges",
+    "id": "be_fr",
+    "url": "https://calendars.icloud.com/holidays/be_fr.ics/",
+    "aliases": [
+      "be_fr-be"
+    ],
+    "locale": "fr"
+  },
+  {
+    "region": "BE",
+    "language": "nl",
+    "title": "Belgische feestdagen",
+    "id": "be_nl",
+    "url": "https://calendars.icloud.com/holidays/be_nl.ics/",
+    "aliases": [
+      "be_nl-be"
+    ],
+    "locale": "nl"
+  },
+  {
+    "region": "BG",
+    "language": "bg",
+    "title": "Български празници",
+    "id": "bg_bg",
+    "url": "https://calendars.icloud.com/holidays/bg_bg.ics/",
+    "aliases": [],
+    "locale": "bg"
+  },
+  {
+    "region": "BR",
+    "language": "pt",
+    "title": "Feriados",
+    "id": "br_pt",
+    "url": "https://calendars.icloud.com/holidays/br_pt.ics/",
+    "aliases": [],
+    "locale": "pt"
+  },
+  {
+    "region": "CA",
+    "language": "en",
+    "title": "Canadian Holidays",
+    "id": "ca_en",
+    "url": "https://calendars.icloud.com/holidays/ca_en.ics/",
+    "aliases": [],
+    "locale": "en"
+  },
+  {
+    "region": "CA",
+    "language": "fr",
+    "title": "Jours fériés canadiens",
+    "id": "ca_fr",
+    "url": "https://calendars.icloud.com/holidays/ca_fr.ics/",
+    "aliases": [
+      "ca_fr-ca"
+    ],
+    "locale": "fr"
+  },
+  {
+    "region": "CH",
+    "language": "de",
+    "title": "Schweizerische Feiertage",
+    "id": "ch_de",
+    "url": "https://calendars.icloud.com/holidays/ch_de.ics/",
+    "aliases": [
+      "ch_de-ch"
+    ],
+    "locale": "de"
+  },
+  {
+    "region": "CH",
+    "language": "fr",
+    "title": "Jours fériés suisses",
+    "id": "ch_fr",
+    "url": "https://calendars.icloud.com/holidays/ch_fr.ics/",
+    "aliases": [],
+    "locale": "fr"
+  },
+  {
+    "region": "CH",
+    "language": "it",
+    "title": "Festività svizzere",
+    "id": "ch_it",
+    "url": "https://calendars.icloud.com/holidays/ch_it.ics/",
+    "aliases": [],
+    "locale": "it"
+  },
+  {
+    "region": "CL",
+    "language": "es",
+    "title": "Feriados de Chile",
+    "id": "cl_es-cl",
+    "url": "https://calendars.icloud.com/holidays/cl_es-cl.ics/",
+    "aliases": [],
+    "locale": "es"
+  },
+  {
+    "region": "CN",
+    "language": "zh",
+    "title": "中国大陆节假日",
+    "id": "cn_zh",
+    "url": "https://calendars.icloud.com/holidays/cn_zh.ics/",
+    "aliases": [],
+    "locale": "zh-Hans"
+  },
+  {
+    "region": "CO",
+    "language": "es",
+    "title": "Festivos de Colombia",
+    "id": "co_es",
+    "url": "https://calendars.icloud.com/holidays/co_es.ics/",
+    "aliases": [],
+    "locale": "es"
+  },
+  {
+    "region": "CZ",
+    "language": "cs",
+    "title": "České svátky",
+    "id": "cz_cs",
+    "url": "https://calendars.icloud.com/holidays/cz_cs.ics/",
+    "aliases": [],
+    "locale": "cs"
+  },
+  {
+    "region": "DE",
+    "language": "de",
+    "title": "Deutsche Feiertage",
+    "id": "de_de",
+    "url": "https://calendars.icloud.com/holidays/de_de.ics/",
+    "aliases": [],
+    "locale": "de"
+  },
+  {
+    "region": "DK",
+    "language": "da",
+    "title": "Mærkedagskalender",
+    "id": "dk_da",
+    "url": "https://calendars.icloud.com/holidays/dk_da.ics/",
+    "aliases": [],
+    "locale": "da"
+  },
+  {
+    "region": "ES",
+    "language": "ca",
+    "title": "Festius a Espanya",
+    "id": "es_ca",
+    "url": "https://calendars.icloud.com/holidays/es_ca.ics/",
+    "aliases": [],
+    "locale": "ca"
+  },
+  {
+    "region": "ES",
+    "language": "es",
+    "title": "Festivos en España",
+    "id": "es_es",
+    "url": "https://calendars.icloud.com/holidays/es_es.ics/",
+    "aliases": [],
+    "locale": "es"
+  },
+  {
+    "region": "FI",
+    "language": "fi",
+    "title": "Suomen juhlapäivät",
+    "id": "fi_fi",
+    "url": "https://calendars.icloud.com/holidays/fi_fi.ics/",
+    "aliases": [],
+    "locale": "fi"
+  },
+  {
+    "region": "FR",
+    "language": "fr",
+    "title": "Fêtes (France)",
+    "id": "fr_fr",
+    "url": "https://calendars.icloud.com/holidays/fr_fr.ics/",
+    "aliases": [],
+    "locale": "fr"
+  },
+  {
+    "region": "GB",
+    "language": "en",
+    "title": "UK Holidays",
+    "id": "gb_en",
+    "url": "https://calendars.icloud.com/holidays/gb_en.ics/",
+    "aliases": [
+      "gb_en-gb"
+    ],
+    "locale": "en"
+  },
+  {
+    "region": "GR",
+    "language": "el",
+    "title": "Ελληνικές γιορτές/αργίες",
+    "id": "gr_el",
+    "url": "https://calendars.icloud.com/holidays/gr_el.ics/",
+    "aliases": [],
+    "locale": "el"
+  },
+  {
+    "region": "HK",
+    "language": "en",
+    "title": "Hong Kong Holidays",
+    "id": "hk_en",
+    "url": "https://calendars.icloud.com/holidays/hk_en.ics/",
+    "aliases": [
+      "hk_en-hk"
+    ],
+    "locale": "en"
+  },
+  {
+    "region": "HK",
+    "language": "zh",
+    "title": "香港節日",
+    "id": "hk_zh",
+    "url": "https://calendars.icloud.com/holidays/hk_zh.ics/",
+    "aliases": [],
+    "locale": "zh-Hant"
+  },
+  {
+    "region": "HR",
+    "language": "hr",
+    "title": "Hrvatski praznici",
+    "id": "hr_hr",
+    "url": "https://calendars.icloud.com/holidays/hr_hr.ics/",
+    "aliases": [],
+    "locale": "hr"
+  },
+  {
+    "region": "HU",
+    "language": "hu",
+    "title": "Magyar ünnepnapok",
+    "id": "hu_hu",
+    "url": "https://calendars.icloud.com/holidays/hu_hu.ics/",
+    "aliases": [],
+    "locale": "hu"
+  },
+  {
+    "region": "ID",
+    "language": "id",
+    "title": "Hari Libur Indonesia",
+    "id": "id_id",
+    "url": "https://calendars.icloud.com/holidays/id_id.ics/",
+    "aliases": [],
+    "locale": "id"
+  },
+  {
+    "region": "IE",
+    "language": "en",
+    "title": "Irish Holidays",
+    "id": "ie_en-ie",
+    "url": "https://calendars.icloud.com/holidays/ie_en-ie.ics/",
+    "aliases": [],
+    "locale": "en"
+  },
+  {
+    "region": "IL",
+    "language": "he",
+    "title": "חגים בישראל",
+    "id": "il_he",
+    "url": "https://calendars.icloud.com/holidays/il_he.ics/",
+    "aliases": [],
+    "locale": "he"
+  },
+  {
+    "region": "IN",
+    "language": "bn",
+    "title": "ভারতীয় ছুটির ক্যালেন্ডার",
+    "id": "in_bn",
+    "url": "https://calendars.icloud.com/holidays/in_bn.ics/",
+    "aliases": [],
+    "locale": "bn"
+  },
+  {
+    "region": "IN",
+    "language": "en",
+    "title": "India Holidays",
+    "id": "in_en",
+    "url": "https://calendars.icloud.com/holidays/in_en.ics/",
+    "aliases": [
+      "in_en-in"
+    ],
+    "locale": "en"
+  },
+  {
+    "region": "IN",
+    "language": "gu",
+    "title": "ભારતીય રજાઓ",
+    "id": "in_gu",
+    "url": "https://calendars.icloud.com/holidays/in_gu.ics/",
+    "aliases": [],
+    "locale": "gu"
+  },
+  {
+    "region": "IN",
+    "language": "hi",
+    "title": "भारतीय अवकाश कैलेंडर",
+    "id": "in_hi",
+    "url": "https://calendars.icloud.com/holidays/in_hi.ics/",
+    "aliases": [],
+    "locale": "hi"
+  },
+  {
+    "region": "IN",
+    "language": "kn",
+    "title": "ಸಾರ್ವತ್ರಿಕ ರಜಾ ದಿನಗಳು",
+    "id": "in_kn",
+    "url": "https://calendars.icloud.com/holidays/in_kn.ics/",
+    "aliases": [],
+    "locale": "kn"
+  },
+  {
+    "region": "IN",
+    "language": "ml",
+    "title": "ഇന്ത്യയിലെ അവധി ദിനങ്ങൾ",
+    "id": "in_ml",
+    "url": "https://calendars.icloud.com/holidays/in_ml.ics/",
+    "aliases": [],
+    "locale": "ml"
+  },
+  {
+    "region": "IN",
+    "language": "mr",
+    "title": "भारतीय सुट्ट्या",
+    "id": "in_mr",
+    "url": "https://calendars.icloud.com/holidays/in_mr.ics/",
+    "aliases": [],
+    "locale": "mr"
+  },
+  {
+    "region": "IN",
+    "language": "or",
+    "title": "ଭାରତୀୟ ଛୁଟିଦିନ",
+    "id": "in_or",
+    "url": "https://calendars.icloud.com/holidays/in_or.ics/",
+    "aliases": [],
+    "locale": "or"
+  },
+  {
+    "region": "IN",
+    "language": "pa",
+    "title": "ਭਾਰਤੀ ਛੁੱਟੀਆਂ ਦਾ ਕੈਲੰਡਰ",
+    "id": "in_pa",
+    "url": "https://calendars.icloud.com/holidays/in_pa.ics/",
+    "aliases": [],
+    "locale": "pa"
+  },
+  {
+    "region": "IN",
+    "language": "ta",
+    "title": "இந்திய விடுமுறை நாட்கள்",
+    "id": "in_ta",
+    "url": "https://calendars.icloud.com/holidays/in_ta.ics/",
+    "aliases": [],
+    "locale": "ta"
+  },
+  {
+    "region": "IN",
+    "language": "te",
+    "title": "భారతీయ సెలవులు",
+    "id": "in_te",
+    "url": "https://calendars.icloud.com/holidays/in_te.ics/",
+    "aliases": [],
+    "locale": "te"
+  },
+  {
+    "region": "IN",
+    "language": "ur",
+    "title": "بھارت کا تعطیلی کیلنڈر",
+    "id": "in_ur",
+    "url": "https://calendars.icloud.com/holidays/in_ur.ics/",
+    "aliases": [],
+    "locale": "ur"
+  },
+  {
+    "region": "IT",
+    "language": "it",
+    "title": "Festività italiane",
+    "id": "it_it",
+    "url": "https://calendars.icloud.com/holidays/it_it.ics/",
+    "aliases": [],
+    "locale": "it"
+  },
+  {
+    "region": "JP",
+    "language": "en",
+    "title": "Japan Holidays",
+    "id": "jp_en",
+    "url": "https://calendars.icloud.com/holidays/jp_en.ics/",
+    "aliases": [],
+    "locale": "en"
+  },
+  {
+    "region": "JP",
+    "language": "ja",
+    "title": "日本の祝日",
+    "id": "jp_ja",
+    "url": "https://calendars.icloud.com/holidays/jp_ja.ics/",
+    "aliases": [],
+    "locale": "ja"
+  },
+  {
+    "region": "KR",
+    "language": "ko",
+    "title": "대한민국 공휴일",
+    "id": "kr_ko",
+    "url": "https://calendars.icloud.com/holidays/kr_ko.ics/",
+    "aliases": [],
+    "locale": "ko"
+  },
+  {
+    "region": "KZ",
+    "language": "kk",
+    "title": "Қазақстан мерекелері",
+    "id": "kz_kk",
+    "url": "https://calendars.icloud.com/holidays/kz_kk.ics/",
+    "aliases": [],
+    "locale": "kk"
+  },
+  {
+    "region": "LU",
+    "language": "de",
+    "title": "Luxemburger Feiertage",
+    "id": "lu_de-lu",
+    "url": "https://calendars.icloud.com/holidays/lu_de-lu.ics/",
+    "aliases": [],
+    "locale": "de"
+  },
+  {
+    "region": "LU",
+    "language": "fr",
+    "title": "Fêtes luxembourgeoises",
+    "id": "lu_fr-lu",
+    "url": "https://calendars.icloud.com/holidays/lu_fr-lu.ics/",
+    "aliases": [],
+    "locale": "fr"
+  },
+  {
+    "region": "MX",
+    "language": "en",
+    "title": "Mexican Holidays",
+    "id": "mx_en",
+    "url": "https://calendars.icloud.com/holidays/mx_en.ics/",
+    "aliases": [],
+    "locale": "en"
+  },
+  {
+    "region": "MX",
+    "language": "es",
+    "title": "Días festivos (México)",
+    "id": "mx_es",
+    "url": "https://calendars.icloud.com/holidays/mx_es.ics/",
+    "aliases": [
+      "mx_es-mx"
+    ],
+    "locale": "es"
+  },
+  {
+    "region": "MY",
+    "language": "en",
+    "title": "Holidays in Malaysia",
+    "id": "my_en",
+    "url": "https://calendars.icloud.com/holidays/my_en.ics/",
+    "aliases": [
+      "my_en-my"
+    ],
+    "locale": "en"
+  },
+  {
+    "region": "MY",
+    "language": "ms",
+    "title": "Cuti Malaysia",
+    "id": "my_ms",
+    "url": "https://calendars.icloud.com/holidays/my_ms.ics/",
+    "aliases": [],
+    "locale": "ms"
+  },
+  {
+    "region": "MY",
+    "language": "zh",
+    "title": "马来西亚节假日",
+    "id": "my_zh",
+    "url": "https://calendars.icloud.com/holidays/my_zh.ics/",
+    "aliases": [],
+    "locale": "zh-Hans"
+  },
+  {
+    "region": "NL",
+    "language": "nl",
+    "title": "Nederlandse feestdagen",
+    "id": "nl_nl",
+    "url": "https://calendars.icloud.com/holidays/nl_nl.ics/",
+    "aliases": [],
+    "locale": "nl"
+  },
+  {
+    "region": "NO",
+    "language": "nb",
+    "title": "Merkedagskalender",
+    "id": "no_nb",
+    "url": "https://calendars.icloud.com/holidays/no_nb.ics/",
+    "aliases": [
+      "no_nn"
+    ],
+    "locale": "nb"
+  },
+  {
+    "region": "NO",
+    "language": "no",
+    "title": "Norske merkedager",
+    "id": "no_no",
+    "url": "https://calendars.icloud.com/holidays/no_no.ics/",
+    "aliases": [],
+    "locale": "no"
+  },
+  {
+    "region": "NZ",
+    "language": "en",
+    "title": "New Zealand Holidays",
+    "id": "nz_en",
+    "url": "https://calendars.icloud.com/holidays/nz_en.ics/",
+    "aliases": [],
+    "locale": "en"
+  },
+  {
+    "region": "PH",
+    "language": "en",
+    "title": "Philippines Holidays",
+    "id": "ph_en",
+    "url": "https://calendars.icloud.com/holidays/ph_en.ics/",
+    "aliases": [],
+    "locale": "en"
+  },
+  {
+    "region": "PL",
+    "language": "pl",
+    "title": "Święta w Polsce",
+    "id": "pl_pl",
+    "url": "https://calendars.icloud.com/holidays/pl_pl.ics/",
+    "aliases": [],
+    "locale": "pl"
+  },
+  {
+    "region": "PT",
+    "language": "pt",
+    "title": "Feriados",
+    "id": "pt_pt",
+    "url": "https://calendars.icloud.com/holidays/pt_pt.ics/",
+    "aliases": [],
+    "locale": "pt"
+  },
+  {
+    "region": "RO",
+    "language": "ro",
+    "title": "Sărbători în România",
+    "id": "ro_ro",
+    "url": "https://calendars.icloud.com/holidays/ro_ro.ics/",
+    "aliases": [],
+    "locale": "ro"
+  },
+  {
+    "region": "RU",
+    "language": "ru",
+    "title": "Праздники России",
+    "id": "ru_ru",
+    "url": "https://calendars.icloud.com/holidays/ru_ru.ics/",
+    "aliases": [],
+    "locale": "ru"
+  },
+  {
+    "region": "SA",
+    "language": "ar",
+    "title": "أعياد المملكة العربية السعودية",
+    "id": "sa_ar",
+    "url": "https://calendars.icloud.com/holidays/sa_ar.ics/",
+    "aliases": [],
+    "locale": "ar"
+  },
+  {
+    "region": "SE",
+    "language": "sv",
+    "title": "Svenska helgdagar",
+    "id": "se_sv",
+    "url": "https://calendars.icloud.com/holidays/se_sv.ics/",
+    "aliases": [],
+    "locale": "sv"
+  },
+  {
+    "region": "SG",
+    "language": "en",
+    "title": "Holidays in Singapore",
+    "id": "sg_en",
+    "url": "https://calendars.icloud.com/holidays/sg_en.ics/",
+    "aliases": [
+      "sg_en-sg"
+    ],
+    "locale": "en"
+  },
+  {
+    "region": "SG",
+    "language": "ms",
+    "title": "Cuti Singapura",
+    "id": "sg_ms",
+    "url": "https://calendars.icloud.com/holidays/sg_ms.ics/",
+    "aliases": [],
+    "locale": "ms"
+  },
+  {
+    "region": "SG",
+    "language": "zh",
+    "title": "新加坡节假日",
+    "id": "sg_zh",
+    "url": "https://calendars.icloud.com/holidays/sg_zh.ics/",
+    "aliases": [],
+    "locale": "zh-Hans"
+  },
+  {
+    "region": "SK",
+    "language": "sk",
+    "title": "Sviatky na Slovensku",
+    "id": "sk_sk",
+    "url": "https://calendars.icloud.com/holidays/sk_sk.ics/",
+    "aliases": [],
+    "locale": "sk"
+  },
+  {
+    "region": "TH",
+    "language": "th",
+    "title": "วันหยุดไทย",
+    "id": "th_th",
+    "url": "https://calendars.icloud.com/holidays/th_th.ics/",
+    "aliases": [],
+    "locale": "th"
+  },
+  {
+    "region": "TR",
+    "language": "tr",
+    "title": "Tatiller (Türkiye)",
+    "id": "tr_tr",
+    "url": "https://calendars.icloud.com/holidays/tr_tr.ics/",
+    "aliases": [],
+    "locale": "tr"
+  },
+  {
+    "region": "TW",
+    "language": "en",
+    "title": "Taiwan Holidays",
+    "id": "tw_en",
+    "url": "https://calendars.icloud.com/holidays/tw_en.ics/",
+    "aliases": [],
+    "locale": "en"
+  },
+  {
+    "region": "TW",
+    "language": "zh",
+    "title": "台灣節日",
+    "id": "tw_zh",
+    "url": "https://calendars.icloud.com/holidays/tw_zh.ics/",
+    "aliases": [],
+    "locale": "zh-Hant"
+  },
+  {
+    "region": "UA",
+    "language": "uk",
+    "title": "Свята в Україні",
+    "id": "ua_uk",
+    "url": "https://calendars.icloud.com/holidays/ua_uk.ics/",
+    "aliases": [],
+    "locale": "uk"
+  },
+  {
+    "region": "US",
+    "language": "en",
+    "title": "US Holidays",
+    "id": "us_en",
+    "url": "https://calendars.icloud.com/holidays/us_en.ics/",
+    "aliases": [
+      "us_en-us"
+    ],
+    "locale": "en"
+  },
+  {
+    "region": "US",
+    "language": "es",
+    "title": "Días festivos (EE.UU.)",
+    "id": "us_es",
+    "url": "https://calendars.icloud.com/holidays/us_es.ics/",
+    "aliases": [],
+    "locale": "es"
+  },
+  {
+    "region": "VN",
+    "language": "vi",
+    "title": "Ngày lễ Việt Nam",
+    "id": "vn_vi",
+    "url": "https://calendars.icloud.com/holidays/vn_vi.ics/",
+    "aliases": [],
+    "locale": "vi"
+  },
+  {
+    "region": "ZA",
+    "language": "en",
+    "title": "South African Holidays",
+    "id": "za_en-za",
+    "url": "https://calendars.icloud.com/holidays/za_en-za.ics/",
+    "aliases": [],
+    "locale": "en"
+  }
+]
