@@ -115,6 +115,6 @@ The response includes `schemaVersion`, `language`, `mode`, `historyThrough`, `ap
 
 ## License and deployment
 
-The root [MIT license](LICENSE) applies to original code and documentation that project contributors have the right to license. Calendar records, original `.ics` files, archived mirrors, supplemental records, and derived JSON are subject to the terms of their respective sources. [Data sources and licensing (Simplified Chinese)](data/SOURCES.md)
+The root [MIT license](LICENSE) applies to original code and documentation that project contributors have the right to license. Calendar records, original `.ics` files, archived mirrors, supplemental records, and derived JSON are subject to the terms of their respective sources. [Data sources and licensing](data/SOURCES.md)
 
 This repository publishes the site code and the snapshots used to build it. The original archives are available from their respective sources. GitHub Actions deploys the `main` branch to GitHub Pages.

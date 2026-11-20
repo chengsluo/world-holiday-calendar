@@ -115,6 +115,6 @@ npm run check
 
 ## 许可和发布
 
-根目录的 [MIT 许可](LICENSE) 适用于项目贡献者有权授权的原创代码和文档。日历记录、原始 `.ics`、历史镜像、补录及其派生 JSON 按各自来源的条款处理。[数据出处与许可](data/SOURCES.md)
+根目录的 [MIT 许可](LICENSE) 适用于项目贡献者有权授权的原创代码和文档。日历记录、原始 `.ics`、历史镜像、补录及其派生 JSON 按各自来源的条款处理。[数据出处与许可](data/SOURCES.zh-CN.md)
 
 此仓库发布网站代码和构建所用的日历快照。原始归档由各来源提供。GitHub Pages 从 `main` 分支通过 GitHub Actions 发布。
