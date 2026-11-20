@@ -1,0 +1,81 @@
+name: Refresh calendars and deploy Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "23 8 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: world-holiday-calendar-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-python@v6
+        if: github.event_name != 'push'
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: Refresh Apple subscriptions
+        if: github.event_name != 'push'
+        run: |
+          python -m pip install -r scripts/requirements.txt
+          python tools/refresh.py
+          git diff --exit-code -- data/history.json
+      - name: Build and verify
+        run: |
+          npm ci
+          npm run build
+          npm run check
+      - name: Save the checked snapshot
+        if: github.event_name != 'push' && github.ref == 'refs/heads/main'
+        run: |
+          if git diff --quiet -- data/current.json; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/current.json
+          git commit -m "Refresh Apple holiday calendar snapshot"
+          git push origin HEAD:main
+      - name: Check that the build is still current
+        if: github.ref == 'refs/heads/main'
+        run: |
+          remote_head="$(git ls-remote origin refs/heads/main | cut -f1)"
+          test "$(git rev-parse HEAD)" = "$remote_head"
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: _site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
