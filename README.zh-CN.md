@@ -2,13 +2,15 @@
 
 [English](README.md) · **简体中文**
 
-按国家、地区、语言和年份浏览、下载节假日。Eleventy 用 Node.js 将日历和下载接口一起生成静态文件。当前目录保留 52 个国家和地区、79 个日历版本，界面支持 46 个语言和文字版本，包括简体、繁体中文和从右到左的排版。
+按国家、地区、语言和年份浏览、下载节假日。Eleventy 用 Node.js 将日历和下载接口一起生成静态文件。当前目录保留 52 个国家和地区、79 个日历版本，界面支持 47 个语言和文字版本，包括简体、繁体中文和从右到左的排版。
+
+首页日历目录支持按国家或地区分组，也可以切换为按日历语言分组。
 
 正式站点为 [全球节假日日历](https://chengsluo.github.io/world-holiday-calendar/)。年份页面使用独立路径，例如 `/world-holiday-calendar/calendars/jp/ja/2010/`。
 
 ## 支持的语言
 
-网站提供以下 46 个界面语言及文字版本。点击语言名称即可打开对应首页。
+网站提供以下 47 个界面语言及文字版本。点击语言名称即可打开对应首页。
 
 | 语言 | 本地名称 | 语言代码 |
 | --- | --- | --- |
@@ -44,7 +46,8 @@
 | [奥里亚语](https://chengsluo.github.io/world-holiday-calendar/languages/or/) | ଓଡ଼ିଆ | `or` |
 | [旁遮普语](https://chengsluo.github.io/world-holiday-calendar/languages/pa/) | ਪੰਜਾਬੀ | `pa` |
 | [波兰语](https://chengsluo.github.io/world-holiday-calendar/languages/pl/) | polski | `pl` |
-| [葡萄牙语](https://chengsluo.github.io/world-holiday-calendar/languages/pt/) | português | `pt` |
+| [葡萄牙语（巴西）](https://chengsluo.github.io/world-holiday-calendar/languages/pt-br/) | português (Brasil) | `pt-BR` |
+| [葡萄牙语（葡萄牙）](https://chengsluo.github.io/world-holiday-calendar/languages/pt-pt/) | português europeu | `pt-PT` |
 | [罗马尼亚语](https://chengsluo.github.io/world-holiday-calendar/languages/ro/) | română | `ro` |
 | [俄语](https://chengsluo.github.io/world-holiday-calendar/languages/ru/) | русский | `ru` |
 | [斯洛伐克语](https://chengsluo.github.io/world-holiday-calendar/languages/sk/) | slovenčina | `sk` |
@@ -97,7 +100,7 @@ npm run check
 
 ## HTTPS JSON 下载
 
-部署后，数据由 GitHub Pages 以静态 JSON 提供。每个语言文件按 ISO 国家及地区代码归档，包含该语言所有已收录的日历版本和年份。简体和繁体中文可单独下载，`zh.json` 同时收录两者。
+部署后，数据由 GitHub Pages 以静态 JSON 提供。每个语言文件按 ISO 国家及地区代码归档，包含该语言所有已收录的日历版本和年份。简体和繁体中文可单独下载，`zh.json` 同时收录两者。巴西葡语和葡萄牙葡语分别使用 `pt-br.json` 和 `pt-pt.json`。
 
 | 用途 | 站点相对路径 |
 | --- | --- |

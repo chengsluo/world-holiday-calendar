@@ -75,7 +75,8 @@ document.querySelectorAll("[data-enhanced]").forEach((node) => { node.hidden = f
 selector.addEventListener("change", () => {
   locale = selector.value;
   if (page === "home") {
-    location.assign(homePath(locale) + location.hash);
+    const group = query.get("group") === "language" ? "?group=language" : "";
+    location.assign(homePath(locale) + group + location.hash);
     return;
   }
   if (locale === initialLocale) query.delete("ui");
@@ -89,27 +90,51 @@ else updateLinks();
 
 const search = document.querySelector("#directory-search");
 if (search) {
-  const cards = [...document.querySelectorAll(".country")];
+  const groupControls = [...document.querySelectorAll('input[name="directory-group"]')];
   const normalize = (text) => text.normalize("NFKD").replace(/\p{M}/gu, "").toLocaleLowerCase(locale);
-  const labels = cards.map((card) => normalize(card.dataset.search + " " + card.textContent));
+  const groups = [...document.querySelectorAll("[data-directory-group]")].map((panel) => ({
+    panel,
+    cards: [...panel.querySelectorAll("[data-directory-card]")].map((card) => ({
+      card,
+      entries: [...card.querySelectorAll("[data-search]")].map((entry) => ({
+        entry, label: normalize(entry.dataset.search + " " + entry.textContent),
+      })),
+    })),
+  }));
   const count = document.querySelector("#directory-count");
   const noMatches = document.querySelector("#no-matches");
   const hero = search.closest(".hero");
   const formatter = new Intl.NumberFormat(locale);
   const filterDirectory = () => {
+    const activeGroup = query.get("group") === "language" ? "language" : "region";
+    groupControls.forEach((input) => { input.checked = input.value === activeGroup; });
     const value = search.value.trim();
     const terms = normalize(value).split(/\s+/);
     let visible = 0;
-    cards.forEach((card, index) => {
-      card.hidden = !terms.every((term) => labels[index].includes(term));
-      if (!card.hidden) visible++;
-    });
+    for (const { panel, cards } of groups) {
+      panel.hidden = panel.dataset.directoryGroup !== activeGroup;
+      if (panel.hidden) continue;
+      for (const { card, entries } of cards) {
+        for (const { entry, label } of entries) {
+          entry.hidden = !terms.every((term) => label.includes(term));
+        }
+        card.hidden = entries.every(({ entry }) => entry.hidden);
+        if (!card.hidden) visible++;
+      }
+    }
     count.value = formatter.format(visible);
     noMatches.hidden = visible !== 0;
     hero.toggleAttribute("data-searching", Boolean(value));
   };
+  groupControls.forEach((input) => input.addEventListener("change", () => {
+    if (input.value === "language") query.set("group", "language");
+    else query.delete("group");
+    updateQuery();
+    filterDirectory();
+  }));
   search.addEventListener("input", filterDirectory);
   window.addEventListener("pageshow", filterDirectory);
+  filterDirectory();
   document.addEventListener("keydown", (event) => {
     if (event.key === "/" && !event.ctrlKey && !event.altKey && !event.metaKey &&
         !event.target.closest("input, textarea, select, [contenteditable]")) {

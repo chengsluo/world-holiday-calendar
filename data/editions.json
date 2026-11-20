@@ -63,12 +63,12 @@
   },
   {
     "region": "BR",
-    "language": "pt",
+    "language": "pt-BR",
     "title": "Feriados",
     "id": "br_pt",
     "url": "https://calendars.icloud.com/holidays/br_pt.ics/",
     "aliases": [],
-    "locale": "pt"
+    "locale": "pt-BR"
   },
   {
     "region": "CA",
@@ -574,12 +574,12 @@
   },
   {
     "region": "PT",
-    "language": "pt",
+    "language": "pt-PT",
     "title": "Feriados",
     "id": "pt_pt",
     "url": "https://calendars.icloud.com/holidays/pt_pt.ics/",
     "aliases": [],
-    "locale": "pt"
+    "locale": "pt-PT"
   },
   {
     "region": "RO",

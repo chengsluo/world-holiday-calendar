@@ -2,13 +2,15 @@
 
 **English** · [简体中文](README.zh-CN.md)
 
-Browse and download holidays by country, region, language, and year. Eleventy uses Node.js to build the site and its JSON downloads as static files. The calendar covers 52 countries and regions across 79 editions. The interface offers 46 language and script options, including Simplified and Traditional Chinese and right-to-left layouts.
+Browse and download holidays by country, region, language, and year. Eleventy uses Node.js to build the site and its JSON downloads as static files. The calendar covers 52 countries and regions across 79 editions. The interface offers 47 language and script options, including Simplified and Traditional Chinese and right-to-left layouts.
+
+The homepage directory can group calendars by country or region, or by calendar language.
 
 Calendar years have their own pages, such as [Japan in 2010](https://chengsluo.github.io/world-holiday-calendar/calendars/jp/ja/2010/). [Visit World Holiday Calendar](https://chengsluo.github.io/world-holiday-calendar/).
 
 ## Supported languages
 
-Select any of the 46 interface languages and script options below to open its homepage.
+Select any of the 47 interface languages and script options below to open its homepage.
 
 | Language | Native name | Language code |
 | --- | --- | --- |
@@ -44,7 +46,8 @@ Select any of the 46 interface languages and script options below to open its ho
 | [Odia](https://chengsluo.github.io/world-holiday-calendar/languages/or/) | ଓଡ଼ିଆ | `or` |
 | [Punjabi](https://chengsluo.github.io/world-holiday-calendar/languages/pa/) | ਪੰਜਾਬੀ | `pa` |
 | [Polish](https://chengsluo.github.io/world-holiday-calendar/languages/pl/) | polski | `pl` |
-| [Portuguese](https://chengsluo.github.io/world-holiday-calendar/languages/pt/) | português | `pt` |
+| [Portuguese (Brazil)](https://chengsluo.github.io/world-holiday-calendar/languages/pt-br/) | português (Brasil) | `pt-BR` |
+| [Portuguese (Portugal)](https://chengsluo.github.io/world-holiday-calendar/languages/pt-pt/) | português europeu | `pt-PT` |
 | [Romanian](https://chengsluo.github.io/world-holiday-calendar/languages/ro/) | română | `ro` |
 | [Russian](https://chengsluo.github.io/world-holiday-calendar/languages/ru/) | русский | `ru` |
 | [Slovak](https://chengsluo.github.io/world-holiday-calendar/languages/sk/) | slovenčina | `sk` |
@@ -97,7 +100,7 @@ npm run check
 
 ## JSON downloads over HTTPS
 
-GitHub Pages serves static JSON. Each language file groups calendar editions by ISO country or region code and includes all available years for those editions. Separate Simplified and Traditional Chinese downloads are available, and `zh.json` includes both.
+GitHub Pages serves static JSON. Each language file groups calendar editions by ISO country or region code and includes all available years for those editions. Separate Simplified and Traditional Chinese downloads are available, and `zh.json` includes both. Brazilian and European Portuguese downloads use `pt-br.json` and `pt-pt.json`, respectively.
 
 | Purpose | Site-relative path |
 | --- | --- |

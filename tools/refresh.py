@@ -9,7 +9,7 @@ import sys
 from time import sleep
 from zoneinfo import ZoneInfo
 
-from snapshot import DATA, HISTORY_END, ROOT, read, write
+from snapshot import DATA, HISTORY_END, ROOT, edition_language, read, write
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from sync import mark_workdays, parse_calendar, read_feed  # noqa: E402
@@ -27,7 +27,9 @@ def refresh_edition(edition, previous, today, cache):
             sleep(2 ** attempt)
 
     metadata, data = parse_calendar(payload, today.year)
-    if (metadata["region"], metadata["language"]) != (edition["region"], edition["language"]):
+    region = metadata["region"]
+    language = edition_language(region, metadata["language"])
+    if (region, language) != (edition["region"], edition["language"]):
         raise ValueError(f"Unexpected locale for {key}: {metadata}")
     groups = {}
     for event in data["events"]:

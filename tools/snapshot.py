@@ -14,6 +14,13 @@ def read(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def edition_language(region, apple_language):
+    # Apple uses the same language tag for the Brazilian and Portuguese feeds.
+    if apple_language == "pt" and region in {"BR", "PT"}:
+        return f"pt-{region}"
+    return apple_language
+
+
 def write(path, value, prefix=None):
     prefix = prefix or {}
     lines = [json.dumps(prefix, ensure_ascii=False)[:-1] + (',' if prefix else '') + '"editions":{']
@@ -39,8 +46,10 @@ def split(source):
     live = {}
     for item in catalog["calendars"]:
         item = dict(item)
-        language = item["language"]
-        locale = ("zh-Hant" if item["region"] in {"HK", "TW", "MO"} else "zh-Hans") if language == "zh" else language
+        region = item["region"]
+        language = edition_language(region, item["language"])
+        locale = ("zh-Hant" if region in {"HK", "TW", "MO"} else "zh-Hans") if language == "zh" else language
+        item["language"] = language
         item["locale"] = locale
         key = item["id"]
         editions.append(item)

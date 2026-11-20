@@ -66,18 +66,35 @@ function featuredCalendar(site, locale) {
 
 function home(site, locale) {
   const regions = site.regionOptions(locale);
-  const groups = regions.map(([code, items]) => {
-    const searchTerms = [code, ...["en", "zh-Hans", "zh-Hant"].map((lang) => regionName(lang, code)), ...items.flatMap((item) => [
-      item.id, item.title, languageName("en", item.locale), languageName(item.locale, item.locale), languageName(locale, item.locale),
-    ])];
-    return `<article class="country${items.length === 1 ? " country-single" : ""}" data-search="${escape(searchTerms.join(" "))}">
-      <div class="country-top">${flag(site, code, true)}<span class="region-code" dir="ltr">${code}</span></div>
-      <h3 id="region-${code}">${region(locale, code)}</h3>
-      <ul>${items.map((item) => `<li>${uiLink(site.base + calendarPath(item, item.preferredYear),
-        `<bdi id="edition-${item.id}" lang="${item.locale}">${escape(languageName(item.locale, item.locale))}</bdi>${icon("arrow")}`,
-        `hreflang="${item.locale}" aria-labelledby="region-${code} edition-${item.id}"`)}</li>`).join("")}</ul>
+  const byLanguage = Object.groupBy(regions.flatMap(([, items]) => items), (item) => item.locale);
+  const collator = new Intl.Collator(locale);
+  const languages = Object.entries(byLanguage)
+    .sort(([a], [b]) => collator.compare(languageName(locale, a), languageName(locale, b)));
+  const searchLabels = new Map(site.calendars.map((item) => {
+    const names = [...new Set([locale, "en", "zh-Hans", "zh-Hant", item.locale])];
+    return [item.id, [item.id, item.title, item.region, item.locale, ...item.aliases,
+      ...names.map((lang) => regionName(lang, item.region)),
+      ...names.map((lang) => languageName(lang, item.locale)),
+    ].join(" ")];
+  }));
+  const groupCard = (group, code, items, heading, label, header = "") => {
+    const id = `${group}-${code}`;
+    return `<article class="directory-card${items.length === 1 ? " directory-card-single" : ""}" data-directory-card>
+      ${header}
+      <h3 id="${id}">${heading}</h3>
+      <ul>${items.map((item) => {
+        const linkLabel = `${id}-${item.id}`;
+        return `<li data-search="${escape(searchLabels.get(item.id))}">${uiLink(site.base + calendarPath(item, item.preferredYear),
+          `<span class="edition-label" id="${linkLabel}">${label(item)}</span>${icon("arrow")}`,
+          `hreflang="${item.locale}" aria-labelledby="${id} ${linkLabel}"`)}</li>`;
+      }).join("")}</ul>
     </article>`;
-  }).join("");
+  };
+  const regionCards = regions.map(([code, items]) => groupCard("region", code, items, region(locale, code),
+    (item) => `<bdi lang="${item.locale}">${escape(languageName(item.locale, item.locale))}</bdi>`,
+    `<div class="country-top">${flag(site, code, true)}<span class="region-code" dir="ltr">${code}</span></div>`)).join("");
+  const languageCards = languages.map(([code, items]) => groupCard("language", code, items, language(locale, code),
+    (item) => flag(site, item.region, true) + region(locale, item.region))).join("");
   const shortcuts = quickRegions.map((code) => {
     const [, editions] = regions.find(([regionCode]) => regionCode === code);
     const item = editions.find((edition) => edition.locale === locale) ?? editions[0];
@@ -101,11 +118,18 @@ function home(site, locale) {
   </section>
   <section id="calendars">
     <div class="section-head">
-      <h2>${text(locale, "browse")}</h2>
+      <h2 id="directory-heading">${text(locale, "browse")}</h2>
       <output id="directory-count" for="directory-search">${numberText(locale, regions.length)}</output>
+      <div class="segmented directory-switch" role="radiogroup" aria-labelledby="directory-heading" hidden data-enhanced>
+        <label><input type="radio" name="directory-group" value="region" checked><span>${text(locale, "byRegion")}</span></label>
+        <label><input type="radio" name="directory-group" value="language"><span>${text(locale, "byLanguage")}</span></label>
+      </div>
     </div>
     <p id="no-matches" class="empty-state" hidden>${icon("search")}${text(locale, "noMatches")}</p>
-    <div class="directory" id="directory-results">${groups}</div>
+    <div id="directory-results">
+      <div class="directory" data-directory-group="region">${regionCards}</div>
+      <div class="directory" data-directory-group="language" hidden>${languageCards}</div>
+    </div>
   </section>
   <section class="download-panel" id="downloads">
     <div><h2>${text(locale, "downloads")}</h2><p>${language(locale, locale)} <span aria-hidden="true">·</span> <a href="${site.base}api/v1/index.json">API / JSON</a></p></div>
